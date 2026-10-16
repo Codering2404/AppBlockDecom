@@ -1,0 +1,12 @@
+package com.appsflyer.internal;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes4.dex */
+public enum AFa1oSDK$22881$AFa1vSDK {
+    EMPTY_ARRAY,
+    NONEMPTY_ARRAY,
+    EMPTY_OBJECT,
+    DANGLING_KEY,
+    NONEMPTY_OBJECT,
+    NULL
+}

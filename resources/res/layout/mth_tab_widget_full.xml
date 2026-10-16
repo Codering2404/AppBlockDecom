@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/mth_tab_text_size"
+    android:textColor="@color/mth_tab_widget_text"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="@dimen/mth_tab_bottom_padding"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"/>

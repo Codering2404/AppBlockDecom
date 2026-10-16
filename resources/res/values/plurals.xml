@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="al_exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Fast forward %d second</item>
+        <item quantity="other">Fast forward %d seconds</item>
+    </plurals>
+    <plurals name="al_exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rewind %d second</item>
+        <item quantity="other">Rewind %d seconds</item>
+    </plurals>
+    <plurals name="blocked_apps_count_notification">
+        <item quantity="one">%d application blocked</item>
+        <item quantity="other">%d applications blocked</item>
+    </plurals>
+    <plurals name="blocklist_apps_limit">
+        <item quantity="one">More than %d app</item>
+        <item quantity="other">More than %d apps</item>
+    </plurals>
+    <plurals name="blocklist_select_apps_limit">
+        <item quantity="one">Select up to %d app</item>
+        <item quantity="other">Select up to %d apps</item>
+    </plurals>
+    <plurals name="days_no_param">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="excluded_apps_count">
+        <item quantity="one">%d app excluded</item>
+        <item quantity="other">%d apps excluded</item>
+    </plurals>
+    <plurals name="go_premium_statistics">
+        <item quantity="one">Buy premium to see &lt;b&gt;%d more&lt;/b&gt;</item>
+        <item quantity="other">Buy premium to see &lt;b&gt;%d more&lt;/b&gt;</item>
+    </plurals>
+    <plurals name="hours_quantity">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="intro_less_than_n_hours">
+        <item quantity="one">Less than %d hour</item>
+        <item quantity="other">Less than %d hours</item>
+    </plurals>
+    <plurals name="intro_more_than_n_hours">
+        <item quantity="one">More than %d hour</item>
+        <item quantity="other">More than %d hours</item>
+    </plurals>
+    <plurals name="intro_n_n_hours">
+        <item quantity="one">%1$d - %2$d hour</item>
+        <item quantity="other">%1$d - %2$d hours</item>
+    </plurals>
+    <plurals name="manage_n_profiles">
+        <item quantity="one">You can manage your %d profile or create new ones</item>
+        <item quantity="other">You can manage your %d profiles or create new ones</item>
+    </plurals>
+    <plurals name="minutes_quantity">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="missing_some_apps_message">
+        <item quantity="one">We found that &lt;b&gt;%d app&lt;/b&gt; you had set to block is currently not installed on this device, so we could not restore it.&lt;br/&gt;&lt;br/&gt;You can add the app manually once it is installed on this device.</item>
+        <item quantity="other">We found that &lt;b&gt;%d apps&lt;/b&gt; you had set to block are currently not installed on this device, so we could not restore them.&lt;br/&gt;&lt;br/&gt;You can add them manually once they are installed on this device.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="n_active_profiles">
+        <item quantity="one">%d active profile</item>
+        <item quantity="other">%d active profiles</item>
+    </plurals>
+    <plurals name="n_apps_limit_description">
+        <item quantity="one">You can add only %d application in the free version of the application</item>
+        <item quantity="other">You can add only %d applications in the free version of the application</item>
+    </plurals>
+    <plurals name="n_conditions">
+        <item quantity="one">%d condition</item>
+        <item quantity="other">%d conditions</item>
+    </plurals>
+    <plurals name="n_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="n_days_free">
+        <item quantity="one">%d day free</item>
+        <item quantity="other">%d days free</item>
+    </plurals>
+    <plurals name="n_days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
+    </plurals>
+    <plurals name="n_hour_launches_remaining">
+        <item quantity="one">%d launch remaining this hour</item>
+        <item quantity="other">%d launches remaining this hour</item>
+    </plurals>
+    <plurals name="n_launches">
+        <item quantity="one">%d launch</item>
+        <item quantity="other">%d launches</item>
+    </plurals>
+    <plurals name="n_launches_remaining">
+        <item quantity="one">%d launch remaining</item>
+        <item quantity="other">%d launches remaining</item>
+    </plurals>
+    <plurals name="n_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="n_networks">
+        <item quantity="one">%d network</item>
+        <item quantity="other">%d networks</item>
+    </plurals>
+    <plurals name="n_permissions_missing">
+        <item quantity="one">%d permission missing</item>
+        <item quantity="other">%d permissions missing</item>
+    </plurals>
+    <plurals name="n_problems_detected">
+        <item quantity="one">%d problem detected</item>
+        <item quantity="other">%d problems detected</item>
+    </plurals>
+    <plurals name="n_time_intervals">
+        <item quantity="one">%d time interval</item>
+        <item quantity="other">%d time intervals</item>
+    </plurals>
+    <plurals name="n_website_limit_description">
+        <item quantity="one">You can add only %d website in the free version of the application</item>
+        <item quantity="other">You can add only %d websites in the free version of the application</item>
+    </plurals>
+    <plurals name="n_weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="n_weeks_free">
+        <item quantity="one">%d week free</item>
+        <item quantity="other">%d weeks free</item>
+    </plurals>
+    <plurals name="opens_remaining">
+        <item quantity="one">%d open remaining</item>
+        <item quantity="other">%d opens remaining</item>
+    </plurals>
+    <plurals name="place_details_photo_count">
+        <item quantity="one">%1$d photo</item>
+        <item quantity="other">%1$d photos</item>
+    </plurals>
+    <plurals name="place_details_ratings_content_description">
+        <item quantity="one">%1$s star</item>
+        <item quantity="other">%1$s stars</item>
+    </plurals>
+    <plurals name="place_details_review_count_a11y_label">
+        <item quantity="one">%1$d review</item>
+        <item quantity="other">%1$d reviews</item>
+    </plurals>
+    <plurals name="selected_count">
+        <item quantity="one">%d selected</item>
+        <item quantity="other">%d selected</item>
+    </plurals>
+    <plurals name="time_before_usage_limit_end_description">
+        <item quantity="one">&lt;font color=%s&gt;%s&lt;/font&gt; left until the usage limit is spent!</item>
+        <item quantity="other">&lt;font color=%s&gt;%s&lt;/font&gt; left until the usage limit is spent!</item>
+    </plurals>
+    <plurals name="trial_conversion_reminder_title">
+        <item quantity="one">Your free trial ends in %d day</item>
+        <item quantity="other">Your free trial ends in %d days</item>
+    </plurals>
+    <plurals name="tries_left">
+        <item quantity="one">%d try left</item>
+        <item quantity="other">%d tries left</item>
+    </plurals>
+    <plurals name="unlimited_lock_time_desc">
+        <item quantity="one">Lock profiles for more than %d hour</item>
+        <item quantity="other">Lock profiles for more than %d hours</item>
+    </plurals>
+</resources>

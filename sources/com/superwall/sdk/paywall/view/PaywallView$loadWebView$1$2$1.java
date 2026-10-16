@@ -1,0 +1,100 @@
+package com.superwall.sdk.paywall.view;
+
+import androidx.legacy.content.Werj.QgXempTBEfV;
+import com.superwall.sdk.Superwall;
+import com.superwall.sdk.logger.LogLevel;
+import com.superwall.sdk.logger.LogScope;
+import com.superwall.sdk.logger.Logger;
+import com.superwall.sdk.misc.Either;
+import com.superwall.sdk.paywall.manager.PaywallViewCache;
+import com.superwall.sdk.utilities.ErrorTrackingKt;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CoroutineScope;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes7.dex */
+@Metadata
+@DebugMetadata(c = "com.superwall.sdk.paywall.view.PaywallView$loadWebView$1$2$1", f = "PaywallView.kt", l = {1018}, m = "invokeSuspend")
+final class PaywallView$loadWebView$1$2$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    Object L$0;
+    int label;
+    final /* synthetic */ PaywallView this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    PaywallView$loadWebView$1$2$1(PaywallView paywallView, Continuation<? super PaywallView$loadWebView$1$2$1> continuation) {
+        super(2, continuation);
+        this.this$0 = paywallView;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new PaywallView$loadWebView$1$2$1(this.this$0, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((PaywallView$loadWebView$1$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f139807a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        PaywallView paywallView;
+        Object objF = IntrinsicsKt.f();
+        int i3 = this.label;
+        Unit unit = null;
+        try {
+            if (i3 != 0) {
+                if (i3 == 1) {
+                    paywallView = (PaywallView) this.L$0;
+                    ResultKt.b(obj);
+                } else {
+                    throw new IllegalStateException(QgXempTBEfV.QPxaswcS);
+                }
+            } else {
+                ResultKt.b(obj);
+                PaywallView paywallView2 = this.this$0;
+                Logger.debug$default(Logger.INSTANCE, LogLevel.error, LogScope.paywallView, "Paywall cannot be recreated - cleaning cached instance for next open", (Map) null, (Throwable) null, 24, (Object) null);
+                PaywallView.beforeOnDestroy$default(paywallView2, false, 1, null);
+                this.L$0 = paywallView2;
+                this.label = 1;
+                if (PaywallView.destroyed$default(paywallView2, false, this, 1, null) == objF) {
+                    return objF;
+                }
+                paywallView = paywallView2;
+            }
+            paywallView.cleanup();
+            PaywallViewCache paywallViewCache = paywallView.cache;
+            if (paywallViewCache != null) {
+                paywallViewCache.removePaywallView(paywallView.getState().getPaywall().getIdentifier());
+                unit = Unit.f139807a;
+            }
+            new Either.Success(unit);
+        } catch (Throwable th) {
+            if (ErrorTrackingKt.shouldLog(th)) {
+                Superwall.Companion companion = Superwall.Companion;
+                if (companion.getInitialized()) {
+                    ErrorTrackingKt.trackError(companion.getInstance(), th);
+                }
+            }
+            new Either.Failure(th);
+        }
+        return Unit.f139807a;
+    }
+}

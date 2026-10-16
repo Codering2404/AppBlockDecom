@@ -1,0 +1,5 @@
+package com.google.firebase.firebase_analytics;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class R {
+}

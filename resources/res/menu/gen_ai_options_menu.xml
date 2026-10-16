@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/about_ai_summary"
+        android:title="@string/place_details_gen_ai_about_this_summary"/>
+    <item
+        android:id="@+id/report_gen_ai_summary"
+        android:title="@string/place_details_gen_ai_report_summary"/>
+</menu>

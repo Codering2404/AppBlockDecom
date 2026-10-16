@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/show_ignored_items"
+        android:title="@string/ignore_list"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/statistics_settings"
+        android:title="@string/open_settings"
+        app:showAsAction="never"/>
+</menu>

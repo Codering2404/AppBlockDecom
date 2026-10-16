@@ -1,0 +1,50 @@
+package androidx.glance.color.Tq;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class KqqtdetwHMIO {
+    public static String AsHhUASTlKnl;
+    public static String CGQgDmaWcWffHx;
+    public static String DEwkiqn;
+    public static String EiGIxpXywi;
+    public static String GBIIOesdaE;
+    public static String GDdgWOZaGyK;
+    public static String GHvXqcQi;
+    public static String GdiHMJneJr;
+    public static String IcrU;
+    public static String LKghK;
+    public static String NSYn;
+    public static String NjvnyipXGWVwLx;
+    public static String NxKW;
+    public static String PiOgnypmbLIjx;
+    public static String PnQ;
+    public static String QVDSGWHUZzRjB;
+    public static String StCV;
+    public static String UbKBEwHkfaoF;
+    public static String VRkxztpvZcdp;
+    public static String VcLbYCDC;
+    public static String YViZuYgBZLi;
+    public static String ZHtMIGS;
+    public static String ZkHnuOLuUjL;
+    public static String amKiwHAZXwC;
+    public static String asZacMNSs;
+    public static String dmGLs;
+    public static String eKmElF;
+    public static String eRkvAAMVfZ;
+    public static String ebO;
+    public static String fzUqyXIW;
+    public static String hkU;
+    public static String iAsIowGHdbf;
+    public static String kNUFqRLjTdB;
+    public static String mcxiwtdGlS;
+    public static String neBVHBJRTqTxb;
+    public static String qRVWcrLZWHhg;
+    public static String qzQLBeZxOaQeiai;
+    public static String rAae;
+    public static String tHdFElKSSAZ;
+    public static String unOTTvrWJMOS;
+    public static String wytLqQw;
+    public static String xsPeenHakAE;
+    public static String yarXLJuaUEbJHF;
+    public static String zCGoBIqWrDu;
+    public static String zYYIIRIYYtt;
+}

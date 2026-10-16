@@ -1,0 +1,70 @@
+package com.google.android.recaptcha;
+
+import kotlin.Metadata;
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes6.dex */
+@Metadata
+public final class RecaptchaErrorCode {
+    private static final /* synthetic */ EnumEntries $ENTRIES;
+    private static final /* synthetic */ RecaptchaErrorCode[] $VALUES;
+    private final int errorCode;
+    private final String errorMessage;
+    public static final RecaptchaErrorCode UNKNOWN_ERROR = new RecaptchaErrorCode("UNKNOWN_ERROR", 0, 0, "Unknown Error");
+    public static final RecaptchaErrorCode NETWORK_ERROR = new RecaptchaErrorCode("NETWORK_ERROR", 1, 1, "Network Error");
+    public static final RecaptchaErrorCode INVALID_SITEKEY = new RecaptchaErrorCode("INVALID_SITEKEY", 2, 2, "Site key invalid");
+    public static final RecaptchaErrorCode INVALID_KEYTYPE = new RecaptchaErrorCode("INVALID_KEYTYPE", 3, 3, "Key type invalid");
+    public static final RecaptchaErrorCode INVALID_PACKAGE_NAME = new RecaptchaErrorCode("INVALID_PACKAGE_NAME", 4, 4, "Package name not allowed");
+    public static final RecaptchaErrorCode INVALID_ACTION = new RecaptchaErrorCode("INVALID_ACTION", 5, 5, "Invalid action name, may only include alphanumeric characters like [A-Z], [a-z], [0-9], / and _. Do not include user-specific information");
+    public static final RecaptchaErrorCode INVALID_TIMEOUT = new RecaptchaErrorCode("INVALID_TIMEOUT", 6, 6, "Invalid timeout, minimum value is 5_000L milliseconds");
+    public static final RecaptchaErrorCode NO_NETWORK_FOUND = new RecaptchaErrorCode("NO_NETWORK_FOUND", 7, 7, "No network found on device");
+    public static final RecaptchaErrorCode INTERNAL_ERROR = new RecaptchaErrorCode("INTERNAL_ERROR", 8, 100, "Internal Error");
+
+    private static final /* synthetic */ RecaptchaErrorCode[] $values() {
+        return new RecaptchaErrorCode[]{UNKNOWN_ERROR, NETWORK_ERROR, INVALID_SITEKEY, INVALID_KEYTYPE, INVALID_PACKAGE_NAME, INVALID_ACTION, INVALID_TIMEOUT, NO_NETWORK_FOUND, INTERNAL_ERROR};
+    }
+
+    static {
+        RecaptchaErrorCode[] recaptchaErrorCodeArr$values = $values();
+        $VALUES = recaptchaErrorCodeArr$values;
+        $ENTRIES = EnumEntriesKt.a(recaptchaErrorCodeArr$values);
+    }
+
+    private RecaptchaErrorCode(String str, int i3, int i4, String str2) {
+        this.errorCode = i4;
+        this.errorMessage = str2;
+    }
+
+    public static EnumEntries<RecaptchaErrorCode> getEntries() {
+        return $ENTRIES;
+    }
+
+    public static RecaptchaErrorCode valueOf(String str) {
+        return (RecaptchaErrorCode) Enum.valueOf(RecaptchaErrorCode.class, str);
+    }
+
+    public static RecaptchaErrorCode[] values() {
+        return (RecaptchaErrorCode[]) $VALUES.clone();
+    }
+
+    public final int getErrorCode() {
+        return this.errorCode;
+    }
+
+    public final String getErrorMessage() {
+        return this.errorMessage;
+    }
+}

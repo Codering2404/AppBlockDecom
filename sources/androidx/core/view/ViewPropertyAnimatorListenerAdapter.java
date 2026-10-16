@@ -1,0 +1,19 @@
+package androidx.core.view;
+
+import android.view.View;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes3.dex */
+public class ViewPropertyAnimatorListenerAdapter implements ViewPropertyAnimatorListener {
+    @Override // androidx.core.view.ViewPropertyAnimatorListener
+    public void a(View view) {
+    }
+
+    @Override // androidx.core.view.ViewPropertyAnimatorListener
+    public void b(View view) {
+    }
+
+    @Override // androidx.core.view.ViewPropertyAnimatorListener
+    public void c(View view) {
+    }
+}

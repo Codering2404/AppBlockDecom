@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="48dp"
+    android:width="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#0076d7"
+        android:pathData="M33,9L40,11V8C40,7.448 39.552,7 39,7H34C33.448,7 33,7.448 33,8V9Z"/>
+    <path
+        android:fillColor="#0076d7"
+        android:pathData="M15,9L8,11V8C8,7.448 8.448,7 9,7H14C14.552,7 15,7.448 15,8V9Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__0_res_0x7f080038"
+        android:pathData="M45.379,13.573C45.15,11.972 43.987,10.67 42.419,10.272C38.922,9.384 32.166,8 24,8C15.833,8 9.078,9.384 5.581,10.272C4.013,10.67 2.851,11.972 2.621,13.573C2.041,17.623 1,25.393 1,29C1,33.971 5.029,38 10,38C14.282,38 17.859,35.007 18.769,31H29.23C30.141,35.007 33.717,38 37.999,38C42.97,38 46.999,33.971 46.999,29C47,25.393 45.959,17.622 45.379,13.573Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__1_res_0x7f080039"
+        android:pathData="M37,20C38.657,20 40,18.657 40,17C40,15.343 38.657,14 37,14C35.343,14 34,15.343 34,17C34,18.657 35.343,20 37,20Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__2_res_0x7f08003a"
+        android:pathData="M37,28C38.657,28 40,26.657 40,25C40,23.343 38.657,22 37,22C35.343,22 34,23.343 34,25C34,26.657 35.343,28 37,28Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__3_res_0x7f08003b"
+        android:pathData="M33,24C34.657,24 36,22.657 36,21C36,19.343 34.657,18 33,18C31.343,18 30,19.343 30,21C30,22.657 31.343,24 33,24Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__4_res_0x7f08003c"
+        android:pathData="M41,24C42.657,24 44,22.657 44,21C44,19.343 42.657,18 41,18C39.343,18 38,19.343 38,21C38,22.657 39.343,24 41,24Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__5_res_0x7f08003d"
+        android:pathData="M41,23C42.105,23 43,22.105 43,21C43,19.895 42.105,19 41,19C39.895,19 39,19.895 39,21C39,22.105 39.895,23 41,23Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__6_res_0x7f08003e"
+        android:pathData="M33,23C34.105,23 35,22.105 35,21C35,19.895 34.105,19 33,19C31.895,19 31,19.895 31,21C31,22.105 31.895,23 33,23Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__7_res_0x7f08003f"
+        android:pathData="M37,19C38.105,19 39,18.105 39,17C39,15.895 38.105,15 37,15C35.895,15 35,15.895 35,17C35,18.105 35.895,19 37,19Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_game_controller__8_res_0x7f080040"
+        android:pathData="M37,27C38.105,27 39,26.105 39,25C39,23.895 38.105,23 37,23C35.895,23 35,23.895 35,25C35,26.105 35.895,27 37,27Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M17,19H15V17C15,15.895 14.105,15 13,15H12C10.895,15 10,15.895 10,17V19H8C6.895,19 6,19.895 6,21V22C6,23.105 6.895,24 8,24H10V26C10,27.105 10.895,28 12,28H13C14.105,28 15,27.105 15,26V24H17C18.105,24 19,23.105 19,22V21C19,19.895 18.105,19 17,19Z"
+        android:strokeAlpha="0.05"
+        android:fillAlpha="0.05"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M17,19.5H14.5V17C14.5,16.172 13.828,15.5 13,15.5H12C11.172,15.5 10.5,16.172 10.5,17V19.5H8C7.172,19.5 6.5,20.172 6.5,21V22C6.5,22.828 7.172,23.5 8,23.5H10.5V26C10.5,26.828 11.172,27.5 12,27.5H13C13.828,27.5 14.5,26.828 14.5,26V23.5H17C17.828,23.5 18.5,22.828 18.5,22V21C18.5,20.172 17.828,19.5 17,19.5Z"
+        android:strokeAlpha="0.07"
+        android:fillAlpha="0.07"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M12,16H13C13.552,16 14,16.448 14,17V26C14,26.552 13.552,27 13,27H12C11.448,27 11,26.552 11,26V17C11,16.448 11.448,16 12,16Z"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M18,21V22C18,22.552 17.552,23 17,23H8C7.448,23 7,22.552 7,22V21C7,20.448 7.448,20 8,20H17C17.552,20 18,20.448 18,21Z"/>
+</vector>

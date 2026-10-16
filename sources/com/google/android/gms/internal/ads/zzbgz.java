@@ -1,0 +1,44 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Parcel;
+import android.os.ParcelFileDescriptor;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzbgz implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int iO = SafeParcelReader.O(parcel);
+        boolean zX = false;
+        boolean zX2 = false;
+        boolean zX3 = false;
+        long J = 0;
+        ParcelFileDescriptor parcelFileDescriptor = null;
+        while (parcel.dataPosition() < iO) {
+            int iE = SafeParcelReader.E(parcel);
+            int iW = SafeParcelReader.w(iE);
+            if (iW == 2) {
+                parcelFileDescriptor = (ParcelFileDescriptor) SafeParcelReader.p(parcel, iE, ParcelFileDescriptor.CREATOR);
+            } else if (iW == 3) {
+                zX = SafeParcelReader.x(parcel, iE);
+            } else if (iW == 4) {
+                zX2 = SafeParcelReader.x(parcel, iE);
+            } else if (iW == 5) {
+                J = SafeParcelReader.J(parcel, iE);
+            } else if (iW != 6) {
+                SafeParcelReader.N(parcel, iE);
+            } else {
+                zX3 = SafeParcelReader.x(parcel, iE);
+            }
+        }
+        SafeParcelReader.v(parcel, iO);
+        return new zzbgy(parcelFileDescriptor, zX, zX2, J, zX3);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i3) {
+        return new zzbgy[i3];
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="256dp"
+    android:width="256dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+    <path
+        android:fillColor="@drawable/_ic_streak_bolt_core__0_res_0x7f080065"
+        android:pathData="M127.837,127.918H142.667C144.317,127.918 145.257,129.802 144.266,131.12L127.039,154.032C125.774,155.714 123.103,154.552 123.471,152.48L127.834,127.92H113.004C111.354,127.92 110.414,126.036 111.405,124.718L128.632,101.806C129.897,100.124 132.568,101.285 132.2,103.358L127.837,127.918Z"/>
+</vector>

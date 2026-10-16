@@ -1,0 +1,12 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+enum zzgkn {
+    RESULT_UNKNOWN,
+    RESULT_NOOP_LOCAL_PROGRAM_STILL_VALID,
+    RESULT_UPDATED,
+    RESULT_NOOP_NO_NEW_PROGRAM,
+    RESULT_FAILURE_INVALID_RESPONSE,
+    RESULT_FAILURE_FETCHER_HTTP_RUNTIME_EXCEPTION
+}

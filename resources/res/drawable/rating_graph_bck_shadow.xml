@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="83dp"
+    android:width="260dp"
+    android:viewportWidth="260"
+    android:viewportHeight="83">
+    <path
+        android:fillColor="@drawable/_rating_graph_bck_shadow__0_res_0x7f080115"
+        android:pathData="M0,0C0,0 68.85,-0.72 132.48,44.55C200.96,80.84 259.76,79.76 259.76,79.76V82.75H0V0Z"
+        android:fillAlpha="0.5"/>
+</vector>

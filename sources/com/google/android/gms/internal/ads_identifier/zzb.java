@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads_identifier;
+
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public class zzb extends Binder implements IInterface {
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        throw null;
+    }
+
+    @Override // android.os.Binder
+    public final boolean onTransact(int i3, Parcel parcel, Parcel parcel2, int i4) throws RemoteException {
+        throw null;
+    }
+}

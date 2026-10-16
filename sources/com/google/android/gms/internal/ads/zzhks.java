@@ -1,0 +1,28 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzhks {
+    private static final Logger zza = Logger.getLogger(zzhks.class.getName());
+    private static final AtomicBoolean zzb = new AtomicBoolean(false);
+
+    private zzhks() {
+    }
+
+    public static boolean zza() {
+        return zzb.get();
+    }
+
+    static Boolean zzb() {
+        try {
+            return (Boolean) Class.forName("org.conscrypt.Conscrypt").getMethod("isBoringSslFIPSBuild", null).invoke(null, null);
+        } catch (Exception unused) {
+            zza.logp(Level.INFO, "com.google.crypto.tink.config.internal.TinkFipsUtil", "checkConscryptIsAvailableAndUsesFipsBoringSsl", "Conscrypt is not available or does not support checking for FIPS build.");
+            return Boolean.FALSE;
+        }
+    }
+}

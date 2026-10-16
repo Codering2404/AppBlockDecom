@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main"
+    android:duplicateParentState="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="56dp">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/surface"
+        android:gravity="center"
+        android:id="@+id/onOffTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/AppTheme.TextView.H3.Inverse"/>
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/remainingTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/switchView"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/AppTheme.TextView.H5.Inverse"/>
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchView"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:checked="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/AppTheme.Switch.OnAccent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

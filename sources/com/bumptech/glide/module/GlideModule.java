@@ -1,0 +1,15 @@
+package com.bumptech.glide.module;
+
+import android.content.Context;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideBuilder;
+import com.bumptech.glide.Registry;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes4.dex */
+@Deprecated
+public interface GlideModule extends RegistersComponents, AppliesOptions {
+    /* synthetic */ void a(Context context, GlideBuilder glideBuilder);
+
+    /* synthetic */ void b(Context context, Glide glide, Registry registry);
+}

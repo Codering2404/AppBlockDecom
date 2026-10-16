@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:id="@+id/toastLayout"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/screen_side_padding"
+    android:paddingEnd="@dimen/screen_side_padding">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_gravity="bottom"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/cardview_bottom_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        app:cardBackgroundColor="@color/background"
+        app:cardElevation="@dimen/cardview_elevation"
+        app:strokeColor="@color/critical"
+        app:strokeWidth="2dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/toastTextView"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_strict_mode_active"
+            app:drawableStartCompat="@drawable/ic_strict_mode_outline_48dp"
+            app:drawableTint="@color/main"
+            style="@style/AppTheme.TextView.H4"/>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

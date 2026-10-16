@@ -1,0 +1,17 @@
+package com.facebook.stetho.common;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes4.dex */
+public interface ThreadBound {
+    boolean checkThreadAccess();
+
+    <V> V postAndWait(UncheckedCallable<V> uncheckedCallable);
+
+    void postAndWait(Runnable runnable);
+
+    void postDelayed(Runnable runnable, long j3);
+
+    void removeCallbacks(Runnable runnable);
+
+    void verifyThreadAccess();
+}

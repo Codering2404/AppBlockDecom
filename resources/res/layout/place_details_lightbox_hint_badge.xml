@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/place_image_card_number_of_photos"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/gmp_sys_color_dark_surface_immersive"
+    app:cardCornerRadius="@dimen/gmp_sys_shape_corner_extra_small_corner_size"
+    app:cardElevation="0dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lightbox_hint_chip_vertical_margin"
+        android:layout_marginBottom="@dimen/lightbox_hint_chip_vertical_margin"
+        android:layout_marginStart="@dimen/lightbox_hint_chip_horizontal_margin"
+        android:layout_marginEnd="@dimen/lightbox_hint_chip_horizontal_margin">
+        <ImageView
+            android:layout_width="@dimen/gmp_ref_measurement_icon_size_14"
+            android:layout_height="@dimen/gmp_ref_measurement_icon_size_14"
+            android:src="@drawable/gs_photo_library_vd_24"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:tint="@android:color/white"
+            android:importantForAccessibility="no"
+            android:layout_marginEnd="@dimen/lightbox_hint_chip_icon_margin_end"/>
+        <TextView
+            android:textAppearance="?attr/placesTextAppearanceLabelMedium"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/place_image_card_number_of_photos_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

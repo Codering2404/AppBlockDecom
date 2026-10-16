@@ -1,0 +1,212 @@
+package androidx.room;
+
+import androidx.room.ObservedTableStates;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:33)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata
+@DebugMetadata(c = "androidx.room.TriggerBasedInvalidationTracker$syncTriggers$2$1$1$1", f = "InvalidationTracker.kt", l = {317, 318}, m = "invokeSuspend")
+final class TriggerBasedInvalidationTracker$syncTriggers$2$1$1$1 extends SuspendLambda implements Function2<TransactionScope<Unit>, Continuation<? super Unit>, Object> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    Object f52470a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    Object f52471b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    Object f52472c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    int f52473d;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    int f52474f;
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    int f52475g;
+
+    /* JADX INFO: renamed from: h, reason: collision with root package name */
+    int f52476h;
+
+    /* JADX INFO: renamed from: i, reason: collision with root package name */
+    final /* synthetic */ ObservedTableStates.ObserveOp[] f52477i;
+
+    /* JADX INFO: renamed from: j, reason: collision with root package name */
+    final /* synthetic */ TriggerBasedInvalidationTracker f52478j;
+
+    /* JADX INFO: renamed from: k, reason: collision with root package name */
+    final /* synthetic */ Transactor f52479k;
+
+    /* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+    @Metadata
+    public static final /* synthetic */ class WhenMappings {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public static final /* synthetic */ int[] f52480a;
+
+        static {
+            int[] iArr = new int[ObservedTableStates.ObserveOp.values().length];
+            try {
+                iArr[ObservedTableStates.ObserveOp.f52234a.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                iArr[ObservedTableStates.ObserveOp.f52235b.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                iArr[ObservedTableStates.ObserveOp.f52236c.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            f52480a = iArr;
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    TriggerBasedInvalidationTracker$syncTriggers$2$1$1$1(ObservedTableStates.ObserveOp[] observeOpArr, TriggerBasedInvalidationTracker triggerBasedInvalidationTracker, Transactor transactor, Continuation continuation) {
+        super(2, continuation);
+        this.f52477i = observeOpArr;
+        this.f52478j = triggerBasedInvalidationTracker;
+        this.f52479k = transactor;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation create(Object obj, Continuation continuation) {
+        return new TriggerBasedInvalidationTracker$syncTriggers$2$1$1$1(this.f52477i, this.f52478j, this.f52479k, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    /* JADX INFO: renamed from: h, reason: merged with bridge method [inline-methods] */
+    public final Object invoke(TransactionScope transactionScope, Continuation continuation) {
+        return ((TriggerBasedInvalidationTracker$syncTriggers$2$1$1$1) create(transactionScope, continuation)).invokeSuspend(Unit.f139807a);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x0083, code lost:
+    
+        if (r7.w(r12, r6, r11) == r0) goto L25;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:30:0x0068, code lost:
+    
+        r6 = r12;
+        r5 = r9;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:11:0x003e  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x0089  */
+    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:26:0x0086 -> B:27:0x0087). Please report as a decompilation issue!!! */
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    public final java.lang.Object invokeSuspend(java.lang.Object r12) throws java.lang.Throwable {
+        /*
+            r11 = this;
+            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.f()
+            int r1 = r11.f52476h
+            r2 = 2
+            r3 = 1
+            if (r1 == 0) goto L2c
+            if (r1 == r3) goto Le
+            if (r1 != r2) goto L24
+        Le:
+            int r1 = r11.f52475g
+            int r4 = r11.f52474f
+            int r5 = r11.f52473d
+            java.lang.Object r6 = r11.f52472c
+            androidx.room.Transactor r6 = (androidx.room.Transactor) r6
+            java.lang.Object r7 = r11.f52471b
+            androidx.room.TriggerBasedInvalidationTracker r7 = (androidx.room.TriggerBasedInvalidationTracker) r7
+            java.lang.Object r8 = r11.f52470a
+            androidx.room.ObservedTableStates$ObserveOp[] r8 = (androidx.room.ObservedTableStates.ObserveOp[]) r8
+            kotlin.ResultKt.b(r12)
+            goto L68
+        L24:
+            java.lang.IllegalStateException r12 = new java.lang.IllegalStateException
+            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+            r12.<init>(r0)
+            throw r12
+        L2c:
+            kotlin.ResultKt.b(r12)
+            androidx.room.ObservedTableStates$ObserveOp[] r12 = r11.f52477i
+            androidx.room.TriggerBasedInvalidationTracker r1 = r11.f52478j
+            androidx.room.Transactor r4 = r11.f52479k
+            int r5 = r12.length
+            r6 = 0
+            r8 = r12
+            r7 = r1
+            r12 = r4
+            r1 = r5
+            r4 = r6
+        L3c:
+            if (r4 >= r1) goto L89
+            r5 = r8[r4]
+            int r9 = r6 + 1
+            int[] r10 = androidx.room.TriggerBasedInvalidationTracker$syncTriggers$2$1$1$1.WhenMappings.f52480a
+            int r5 = r5.ordinal()
+            r5 = r10[r5]
+            if (r5 == r3) goto L86
+            if (r5 == r2) goto L71
+            r10 = 3
+            if (r5 != r10) goto L6b
+            r11.f52470a = r8
+            r11.f52471b = r7
+            r11.f52472c = r12
+            r11.f52473d = r9
+            r11.f52474f = r4
+            r11.f52475g = r1
+            r11.f52476h = r2
+            java.lang.Object r5 = androidx.room.TriggerBasedInvalidationTracker.i(r7, r12, r6, r11)
+            if (r5 != r0) goto L66
+            goto L85
+        L66:
+            r6 = r12
+            r5 = r9
+        L68:
+            r12 = r6
+            r6 = r5
+            goto L87
+        L6b:
+            kotlin.NoWhenBranchMatchedException r12 = new kotlin.NoWhenBranchMatchedException
+            r12.<init>()
+            throw r12
+        L71:
+            r11.f52470a = r8
+            r11.f52471b = r7
+            r11.f52472c = r12
+            r11.f52473d = r9
+            r11.f52474f = r4
+            r11.f52475g = r1
+            r11.f52476h = r3
+            java.lang.Object r5 = androidx.room.TriggerBasedInvalidationTracker.h(r7, r12, r6, r11)
+            if (r5 != r0) goto L66
+        L85:
+            return r0
+        L86:
+            r6 = r9
+        L87:
+            int r4 = r4 + r3
+            goto L3c
+        L89:
+            kotlin.Unit r12 = kotlin.Unit.f139807a
+            return r12
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.room.TriggerBasedInvalidationTracker$syncTriggers$2$1$1$1.invokeSuspend(java.lang.Object):java.lang.Object");
+    }
+}

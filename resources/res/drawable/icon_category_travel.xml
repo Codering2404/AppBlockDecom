@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@drawable/_icon_category_travel__0_res_0x7f08008f"
+        android:pathData="M2.5,18C8.003,16.287 9.267,6.501 9.267,6.501L9.812,6.5C9.812,6.5 10,14 7,18H2.5Z"/>
+    <path
+        android:fillColor="#107c42"
+        android:pathData="M9.5,6.585L14.5,1.585C14.229,1.529 13.948,1.5 13.66,1.5C11.363,1.5 9.5,3.362 9.5,5.661V6.585Z"/>
+    <path
+        android:fillColor="#21a366"
+        android:pathData="M9.5,6.5H17.486C16.574,5.287 15.127,4.5 13.493,4.5C11.859,4.5 10.413,5.287 9.5,6.5Z"/>
+    <path
+        android:fillColor="#33c481"
+        android:pathData="M10.352,6.5H9.422L14.922,12C14.973,11.724 15.003,11.441 15.003,11.151C15.003,8.582 12.92,6.5 10.352,6.5Z"/>
+    <path
+        android:fillColor="#107c42"
+        android:pathData="M9.5,6.585L4.5,1.585C4.771,1.529 5.052,1.5 5.339,1.5C7.637,1.5 9.5,3.362 9.5,5.661V6.585Z"/>
+    <path
+        android:fillColor="#21a366"
+        android:pathData="M9.502,6.5H1.516C2.428,5.287 3.875,4.5 5.509,4.5C7.143,4.5 8.59,5.287 9.502,6.5Z"/>
+    <path
+        android:fillColor="#33c481"
+        android:pathData="M8.651,6.5H9.581L4.081,12C4.03,11.724 4,11.441 4,11.151C4,8.582 6.082,6.5 8.651,6.5Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_travel__1_res_0x7f080090"
+        android:pathData="M11.149,17.347L18,21H2.5C1.947,21 1.5,20.552 1.5,20V17H9.764C10.247,17 10.723,17.119 11.149,17.347Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_travel__2_res_0x7f080091"
+        android:pathData="M21,17.5C20.172,17.5 19.5,17 19.5,17C19.5,17 18.829,17.5 18,17.5C17.172,17.5 16.5,17 16.5,17C16.5,17 15.829,17.5 15,17.5C14.172,17.5 13.5,17 13.5,17C13.5,17 12.829,17.5 12,17.5C11.647,17.5 11.327,17.409 11.07,17.304L18,21H21.5C22.053,21 22.5,20.552 22.5,20V17C22.5,17 21.829,17.5 21,17.5Z"/>
+</vector>

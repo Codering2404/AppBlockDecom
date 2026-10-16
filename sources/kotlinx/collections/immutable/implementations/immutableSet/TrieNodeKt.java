@@ -1,0 +1,39 @@
+package kotlinx.collections.immutable.implementations.immutableSet;
+
+import kotlin.Metadata;
+import kotlin.collections.ArraysKt;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes9.dex */
+@Metadata
+public final class TrieNodeKt {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Object[] c(Object[] objArr, int i3, Object obj) {
+        Object[] objArr2 = new Object[objArr.length + 1];
+        ArraysKt.copyInto$default(objArr, objArr2, 0, 0, i3, 6, (Object) null);
+        ArraysKt.copyInto(objArr, objArr2, i3 + 1, i3, objArr.length);
+        objArr2[i3] = obj;
+        return objArr2;
+    }
+
+    public static final int d(int i3, int i4) {
+        return (i3 >> i4) & 31;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Object[] e(Object[] objArr, int i3) {
+        Object[] objArr2 = new Object[objArr.length - 1];
+        ArraysKt.copyInto$default(objArr, objArr2, 0, 0, i3, 6, (Object) null);
+        ArraysKt.copyInto(objArr, objArr2, i3, i3 + 1, objArr.length);
+        return objArr2;
+    }
+}

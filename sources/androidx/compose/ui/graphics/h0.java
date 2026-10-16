@@ -1,0 +1,9 @@
+package androidx.compose.ui.graphics;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract /* synthetic */ class h0 {
+    public static /* synthetic */ android.graphics.BlendModeColorFilter a(int i3, android.graphics.BlendMode blendMode) {
+        return new android.graphics.BlendModeColorFilter(i3, blendMode);
+    }
+}

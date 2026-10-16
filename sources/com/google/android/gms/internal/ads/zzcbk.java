@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import java.util.WeakHashMap;
+import java.util.concurrent.Future;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzcbk {
+    private final WeakHashMap zza = new WeakHashMap();
+
+    public final Future zza(Context context) {
+        return zzcfr.zza.submit(new zzcbi(this, context));
+    }
+
+    final /* synthetic */ WeakHashMap zzb() {
+        return this.zza;
+    }
+}

@@ -1,0 +1,56 @@
+package com.google.android.gms.internal.measurement;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzhu extends zzmf implements zznn {
+    private static final zzhu zzf;
+    private int zzb;
+    private String zzd = "";
+    private long zze;
+
+    static {
+        zzhu zzhuVar = new zzhu();
+        zzf = zzhuVar;
+        zzmf.zzcp(zzhu.class, zzhuVar);
+    }
+
+    private zzhu() {
+    }
+
+    public static zzht zza() {
+        return (zzht) zzf.zzck();
+    }
+
+    final /* synthetic */ void zzb(String str) {
+        str.getClass();
+        this.zzb |= 1;
+        this.zzd = str;
+    }
+
+    final /* synthetic */ void zzc(long j3) {
+        this.zzb |= 2;
+        this.zze = j3;
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzmf
+    protected final Object zzl(int i3, Object obj, Object obj2) {
+        int i4 = i3 - 1;
+        if (i4 == 0) {
+            return (byte) 1;
+        }
+        if (i4 == 2) {
+            return zzmf.zzcq(zzf, "\u0004\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001ဈ\u0000\u0002ဂ\u0001", new Object[]{"zzb", "zzd", "zze"});
+        }
+        if (i4 == 3) {
+            return new zzhu();
+        }
+        byte[] bArr = null;
+        if (i4 == 4) {
+            return new zzht(bArr);
+        }
+        if (i4 == 5) {
+            return zzf;
+        }
+        throw null;
+    }
+}

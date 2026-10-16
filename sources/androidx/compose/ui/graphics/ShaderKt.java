@@ -1,0 +1,42 @@
+package androidx.compose.ui.graphics;
+
+import android.graphics.Shader;
+import java.util.List;
+import kotlin.Metadata;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata
+public final class ShaderKt {
+    public static final Shader a(long j3, long j4, List list, List list2, int i3) {
+        return AndroidShader_androidKt.a(j3, j4, list, list2, i3);
+    }
+
+    public static /* synthetic */ Shader b(long j3, long j4, List list, List list2, int i3, int i4, Object obj) {
+        if ((i4 & 8) != 0) {
+            list2 = null;
+        }
+        List list3 = list2;
+        if ((i4 & 16) != 0) {
+            i3 = TileMode.f25948b.a();
+        }
+        return a(j3, j4, list, list3, i3);
+    }
+
+    public static final Shader c(long j3, float f3, List list, List list2, int i3) {
+        return AndroidShader_androidKt.b(j3, f3, list, list2, i3);
+    }
+
+    public static final Shader d(long j3, List list, List list2) {
+        return AndroidShader_androidKt.c(j3, list, list2);
+    }
+}

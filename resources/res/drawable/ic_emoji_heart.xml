@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="48dp"
+    android:width="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@drawable/_ic_emoji_heart__0_res_0x7f080041"
+        android:pathData="M32.629,8.637C30.922,8.635 29.24,9.054 27.733,9.857C26.227,10.66 24.942,11.823 23.992,13.242C22.758,11.399 20.967,10 18.88,9.249C16.793,8.499 14.521,8.437 12.396,9.072C10.271,9.707 8.406,11.007 7.073,12.779C5.741,14.552 5.011,16.705 4.992,18.923C4.992,30.923 18.809,37.35 23.992,41.637C29.175,37.35 42.992,30.923 42.992,18.923C42.981,16.185 41.884,13.563 39.94,11.634C37.997,9.705 35.367,8.627 32.629,8.637Z"/>
+</vector>

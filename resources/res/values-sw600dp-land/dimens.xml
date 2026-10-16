@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_recycler_item_ratio">0.4</dimen>
+    <dimen name="img_error_max_height">250dp</dimen>
+    <dimen name="screen_side_padding">32dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Collection;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzgvk {
+    static boolean zza(Collection collection, Object obj) {
+        collection.getClass();
+        try {
+            return collection.contains(obj);
+        } catch (ClassCastException | NullPointerException unused) {
+            return false;
+        }
+    }
+}

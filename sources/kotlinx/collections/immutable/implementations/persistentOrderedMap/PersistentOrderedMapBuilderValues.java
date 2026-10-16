@@ -1,0 +1,56 @@
+package kotlinx.collections.immutable.implementations.persistentOrderedMap;
+
+import java.util.Collection;
+import java.util.Iterator;
+import kotlin.Metadata;
+import kotlin.collections.AbstractMutableCollection;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.markers.KMutableCollection;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes9.dex */
+@Metadata
+public final class PersistentOrderedMapBuilderValues<K, V> extends AbstractMutableCollection<V> implements Collection<V>, KMutableCollection {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final PersistentOrderedMapBuilder f140832a;
+
+    public PersistentOrderedMapBuilderValues(PersistentOrderedMapBuilder builder) {
+        Intrinsics.checkNotNullParameter(builder, "builder");
+        this.f140832a = builder;
+    }
+
+    @Override // kotlin.collections.AbstractMutableCollection, java.util.AbstractCollection, java.util.Collection
+    public boolean add(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public void clear() {
+        this.f140832a.clear();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean contains(Object obj) {
+        return this.f140832a.containsValue(obj);
+    }
+
+    @Override // kotlin.collections.AbstractMutableCollection
+    public int getSize() {
+        return this.f140832a.size();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
+    public Iterator iterator() {
+        return new PersistentOrderedMapBuilderValuesIterator(this.f140832a);
+    }
+}

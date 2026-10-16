@@ -1,0 +1,18 @@
+package com.facebook.stetho.inspector.protocol.module;
+
+import com.facebook.stetho.inspector.jsonrpc.JsonRpcPeer;
+import com.facebook.stetho.inspector.protocol.ChromeDevtoolsDomain;
+import com.facebook.stetho.inspector.protocol.ChromeDevtoolsMethod;
+import org.json.JSONObject;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes4.dex */
+public class Inspector implements ChromeDevtoolsDomain {
+    @ChromeDevtoolsMethod
+    public void disable(JsonRpcPeer jsonRpcPeer, JSONObject jSONObject) {
+    }
+
+    @ChromeDevtoolsMethod
+    public void enable(JsonRpcPeer jsonRpcPeer, JSONObject jSONObject) {
+    }
+}

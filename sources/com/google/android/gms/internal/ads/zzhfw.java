@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzhfw {
+    public static final zzhfw zza = new zzhfw("TINK");
+    public static final zzhfw zzb = new zzhfw("CRUNCHY");
+    public static final zzhfw zzc = new zzhfw("NO_PREFIX");
+    private final String zzd;
+
+    private zzhfw(String str) {
+        this.zzd = str;
+    }
+
+    public final String toString() {
+        return this.zzd;
+    }
+}

@@ -1,0 +1,62 @@
+package kotlinx.coroutines.internal;
+
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.CoroutineStackFrame;
+import kotlinx.coroutines.AbstractCoroutine;
+import kotlinx.coroutines.CompletionStateKt;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes9.dex */
+@Metadata
+public class ScopeCoroutine<T> extends AbstractCoroutine<T> implements CoroutineStackFrame {
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public final Continuation f142480d;
+
+    public ScopeCoroutine(CoroutineContext coroutineContext, Continuation continuation) {
+        super(coroutineContext, true, true);
+        this.f142480d = continuation;
+    }
+
+    @Override // kotlinx.coroutines.JobSupport
+    protected void S(Object obj) {
+        DispatchedContinuationKt.b(IntrinsicsKt.c(this.f142480d), CompletionStateKt.a(obj, this.f142480d));
+    }
+
+    @Override // kotlinx.coroutines.AbstractCoroutine
+    protected void b1(Object obj) {
+        Continuation continuation = this.f142480d;
+        continuation.resumeWith(CompletionStateKt.a(obj, continuation));
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
+    public final CoroutineStackFrame getCallerFrame() {
+        Continuation continuation = this.f142480d;
+        if (continuation instanceof CoroutineStackFrame) {
+            return (CoroutineStackFrame) continuation;
+        }
+        return null;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
+    public final StackTraceElement getStackTraceElement() {
+        return null;
+    }
+
+    @Override // kotlinx.coroutines.JobSupport
+    protected final boolean x0() {
+        return true;
+    }
+}

@@ -1,0 +1,52 @@
+package com.facebook.share.HKJ;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class pnxuebdT {
+    public static String AXKvXPDVIHOkQMw;
+    public static String AyCEWajQA;
+    public static String BvyAnLoOXViVlI;
+    public static String BvzCIQr;
+    public static String CtqFqOAOFftG;
+    public static String FUjYMqith;
+    public static String Ffrc;
+    public static String IIsPAxe;
+    public static String ITgPNejfHLIu;
+    public static String IZIfgGKyJZBQPo;
+    public static String IcnlK;
+    public static String IdUrWFE;
+    public static String JYggNioFzxkqBC;
+    public static String MFJJbT;
+    public static String OKxv;
+    public static String PrTURYHyk;
+    public static String RLGfpZEW;
+    public static String RSRVmKnDE;
+    public static String TBCJaPAZkLcvAn;
+    public static String TvvLUMtIuRpmhI;
+    public static String TzcYZQpcEurrz;
+    public static String UegSnUNFNSau;
+    public static String UeszfgVMCyNOdOJ;
+    public static String UjRgQusy;
+    public static String VAXP;
+    public static String Vxx;
+    public static String XhXbYeHUccLws;
+    public static String ZmUyBgxT;
+    public static String cphnpJngxMMafZ;
+    public static String crnMFd;
+    public static String dCNtXfyticeUPvo;
+    public static String eEZa;
+    public static String gnXRHikdE;
+    public static String hjzoozNgBBkjyE;
+    public static String iIim;
+    public static String ikhxx;
+    public static String kAGXZgtb;
+    public static String lhOOgatFtaUb;
+    public static String nbkmZEo;
+    public static String pMOjccexwhK;
+    public static String qkGGbNxgUBOv;
+    public static String trSgv;
+    public static String uRq;
+    public static String uvDTzXJpxQYJdp;
+    public static String zUIKWGV;
+    public static String zVvhzG;
+    public static String zeWAfqHuyS;
+}

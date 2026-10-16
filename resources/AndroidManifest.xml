@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="579"
+    android:versionName="7.21.1"
+    android:compileSdkVersion="36"
+    android:compileSdkVersionCodename="16"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes=""
+    package="cz.mobilesoft.appblock"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16">
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="36"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission-sdk-23 android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="com.huawei.permission.SECURITY_DIAGNOSE"/>
+    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT"/>
+    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.QUERY_ADVANCED_PROTECTION_MODE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.dir/event"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:path="tel:"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="com.singular.preinstall.READ_PERMISSION_SINGULAR"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true"/>
+    <uses-permission android:name="cz.mobilesoft.appblock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE"/>
+    <permission
+        android:name="cz.mobilesoft.appblock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.pairip.application.Application"
+        android:windowSoftInputMode="adjustResize"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="false"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:localeConfig="@xml/locales_config">
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
+            android:value="@bool/FIREBASE_ANALYTICS_DEACTIVATED"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2248939034695615~8207308888"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_appblock_notification"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/accent"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="DEFAULT_CHANNEL_ID"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar.Launcher"
+            android:icon="@mipmap/ic_launcher"
+            android:name="cz.mobilesoft.appblock.MainActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:roundIcon="@mipmap/ic_launcher_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:pathPrefix="/"/>
+                <data android:host="appblock.sng.link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="appblock.app"/>
+                <data android:pathPrefix="/welcome"/>
+                <data android:pathPrefix="/email"/>
+                <data android:pathPrefix="/premium"/>
+                <data android:pathPrefix="/login"/>
+                <data android:pathPrefix="/promo"/>
+            </intent-filter>
+        </activity>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias19"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias19"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias19_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias18"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias18"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias18_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias17"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias17"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias17_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias16"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias16"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias16_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias15"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias15"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias15_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias14"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias14"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias14_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias13"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias13"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias13_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias12"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias12"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias12_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias11"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias11"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias11_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias10"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias10"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias10_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias9"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias9"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias9_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias8"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias8"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias8_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias7"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias7"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias7_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias6"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias6"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias6_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias5"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias5"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias5_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias4"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias4"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias4_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias3"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias3"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias3_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias2"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias2"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias2_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher_alias1"
+            android:name="cz.mobilesoft.appblock.MainActivityAlias1"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="cz.mobilesoft.appblock.MainActivity"
+            android:roundIcon="@mipmap/ic_launcher_alias1_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:name="cz.mobilesoft.coreblock.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:pathPrefix="/"/>
+                <data android:host="appblock.sng.link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="appblock.app"/>
+                <data android:pathPrefix="/welcome"/>
+                <data android:pathPrefix="/email"/>
+                <data android:pathPrefix="/premium"/>
+                <data android:pathPrefix="/login"/>
+                <data android:pathPrefix="/promo"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="cz.mobilesoft.appblock.service.LockServiceV2"
+            android:exported="false"
+            android:process=":LockService"
+            android:foregroundServiceType="specialUse">
+            <intent-filter android:priority="1000">
+                <action android:name="cz.mobilesoft.appblock.service.LockServiceV2"/>
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="This is the main, critical service necessary to mediate application usage detection and blocking as well as counting towards the user&apos;s set usage limits and launch counts. It is started and remains active according to the user&apos;s blocking setup - it provides the functions of Quick Block, blocking schedules and Strict Mode in terms of application blocking. It also keeps the periodic application-usage measurement running for the Time Nudge reminder, which the user enables in settings and which needs current usage data to notify them after a set time in the apps they chose."/>
+        </service>
+        <service
+            android:name="cz.mobilesoft.appblock.service.LockServiceInAccessibilityProcess"
+            android:exported="false"
+            android:process=":AccessibilityService"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="This is the main, critical service necessary to mediate application usage detection and blocking as well as counting towards the user&apos;s set usage limits and launch counts. It is started and remains active according to the user&apos;s blocking setup - it provides the functions of Quick Block, blocking schedules and Strict Mode in terms of application blocking. It also keeps the periodic application-usage measurement running for the Time Nudge reminder, which the user enables in settings and which needs current usage data to notify them after a set time in the apps they chose."/>
+        </service>
+        <service
+            android:label="@string/app_name"
+            android:name="cz.mobilesoft.appblock.service.NotificationService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:name="cz.mobilesoft.appblock.service.StartScreenReceiverService"/>
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true"/>
+        </service>
+        <receiver
+            android:name="cz.mobilesoft.appblock.service.OnBootReceiver"
+            android:exported="false">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.appblock.service.InitOverlayBootReceiver"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.appblock.service.UserPresentReceiver"
+            android:exported="false">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.appblock.service.AppInstallUninstallReceiver"
+            android:exported="false">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.coreblock.service.receiver.PowerConnectionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.appblock.service.AlarmExactPermissionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.widgets.quickblock.QuickBlockWidgetReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/quickblock_widget_provider"/>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.widgets.schedules.SchedulesWidgetReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/schedules_widget_provider"/>
+        </receiver>
+        <activity
+            android:theme="@style/AppTheme.Transparent"
+            android:name="cz.mobilesoft.appblock.activity.LockActivityV2"
+            android:noHistory="true"
+            android:autoRemoveFromRecents="true"
+            android:resizeableActivity="false"/>
+        <activity
+            android:theme="@style/AppTheme.Transparent"
+            android:name="cz.mobilesoft.appblock.activity.LockActivity"
+            android:noHistory="true"
+            android:autoRemoveFromRecents="true"
+            android:resizeableActivity="false"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.appblock.activity.InterstitialAdActivity"
+            android:autoRemoveFromRecents="true"
+            android:resizeableActivity="false"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.settings.SettingsActivity"
+            android:resizeableActivity="false"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6f450a77f180b774824378cea998f86ec1988a37"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token"/>
+        <meta-data
+            android:name="com.facebook.sdk.AutoInitEnabled"
+            android:value="true"/>
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true"/>
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAOvAb0gZ213zShynuayfZvHsNh7FYe_es"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="cz.mobilesoft.appblock.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <service
+            android:name="cz.mobilesoft.appblock.service.NotificationCollectorMonitorService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="cz.mobilesoft.appblock.service.BeforeProfileStartNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":BeforeProfileStartNotificationService"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="This service manages the countdown towards a blocking schedule activation, as per a user&apos;s settings. The user may choose to set how long before a blocking schedule is activated the countdown starts. This service then shows a countdown notification in order for the user to make sure to finish any work in apps that may be blocked once the countdown ends."/>
+        </service>
+        <service
+            android:name="cz.mobilesoft.appblock.service.BeforeProfilePauseEndNotificationService"
+            android:enabled="true"
+            android:process=":BeforeProfilePauseEndNotificationService"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="This service manages the countdown towards the time when and active blocking schedule which has been paused is resumed, as per a user&apos;s settings. The user may choose to set how long before a blocking schedule is resumed the countdown starts. This service then shows a countdown notification in order for the user to make sure to finish any work in apps that may be blocked once the countdown ends."/>
+        </service>
+        <service
+            android:name="cz.mobilesoft.appblock.service.OverlayServiceV2"
+            android:exported="false"/>
+        <service
+            android:name="cz.mobilesoft.appblock.service.OverlayService"
+            android:exported="false"/>
+        <service
+            android:name="cz.mobilesoft.appblock.service.InitOverlayForegroundService"
+            android:exported="false"
+            android:directBootAware="true"
+            android:foregroundServiceType="specialUse"/>
+        <service
+            android:name="cz.mobilesoft.appblock.service.LockAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false"
+            android:process=":AccessibilityService">
+            <intent-filter android:priority="1000">
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/serviceconfig"/>
+        </service>
+        <service
+            android:name="cz.mobilesoft.appblock.service.AccessibilityMonitorService"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="cz.mobilesoft.coreblock.service.receiver.NetworkStateChangedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="cz.mobilesoft.appblock.WIFI_PROFILE_CREATED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.coreblock.service.receiver.GeofenceTransitionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cz.mobilesoft.appblock.ACTION_RECEIVE_GEOFENCE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.appblock.service.LockServiceTimeChangedReceiver"
+            android:exported="false"
+            android:process=":LockService">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.appblock.service.AccessibilityTimeChangedReceiver"
+            android:exported="false"
+            android:process=":AccessibilityService">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="cz.mobilesoft.coreblock.service.LockieFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="cz.mobilesoft.appblock.FileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.dashboard.DashboardActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.password.PassCodeActivity"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
+            android:enableOnBackInvokedCallback="false"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode.passcode.StrictModePassCodeActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.timer.TimeSelectActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.schedule.condition.location.LocationPlacesSelectActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.permission.PermissionActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.help.DokiActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.statistics.detail.StatisticsDetailActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.statistics.ignorelist.IgnoreListActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.statistics.ignorelist.DefaultIgnoredApplicationSelectActivity"/>
+        <activity
+            android:theme="@style/AppTheme.Transparent.NoDim"
+            android:name="cz.mobilesoft.coreblock.activity.rating.RatingDialogActivity"
+            android:autoRemoveFromRecents="true"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.quickblock.tile.WhatsNewActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode.StrictModeActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode3.StrictMode3DeactivationCommitmentActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.statistics.StatisticsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.notifications.BlockedNotificationsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.Transparent.NoDim"
+            android:name="cz.mobilesoft.coreblock.scene.permission.PermissionWizardActivity"
+            android:noHistory="true"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.academy.course.AcademyCoursesActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.academy.lesson.AcademyLessonsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.academy.lesson.AcademyLessonActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.signin.SignInActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.academy.lesson.AcademyAnotherCurrentLessonActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.academy.course.AcademyCourseFinishedActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.academy.lesson.AcademyLessonUnavailableActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.premium.host.PaywallHostActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.premium.host.PaywallHostOwnTaskActivity"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:autoRemoveFromRecents="true"
+            android:resizeableActivity="false"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.help.HelpActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.backup.progress.BackupProgressActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.backup.BackupMainActivity"/>
+        <activity
+            android:theme="@style/AppTheme.Transparent.NoDim"
+            android:name="cz.mobilesoft.coreblock.scene.lockscreen.ossettings.SystemSettingsActivity"
+            android:autoRemoveFromRecents="true"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.referral.ReferralActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.changelog.ChangelogActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.whats_new.WhatsNewFullScreenActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.changelog.intro.ChangelogIntroActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.help.IgnoreBatteryOptimizationGuideActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.intro.quickblock.QuickBlockBlockingTestActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.intro.schedule.IntroScheduleActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.inappupdate.InAppUpdateActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.schedule.ScheduleActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.haf.HaFActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.intro.OnboardingActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.onboarding.OnboardingActivityV2"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.Transparent"
+            android:name="cz.mobilesoft.coreblock.scene.premium.superwall.SuperwallPlacementActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="com.superwall.sdk.paywall.view.SuperwallPaywallActivity"
+            android:configChanges="screenSize|uiMode|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.dashboard.blocking.pause.PauseBlockingActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.selection.ignorelist.IgnoreListSelectActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.settings.developer.browserslist.BrowsersListActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode3.options.StrictModeOptionsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode3.access.StrictModeAccessActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode3.followschedules.ScheduleSelectActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.intro.strictmode.StrictModeIntroActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode3.learnmore.LearnMoreActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.troubleshooting.TroubleshootingStackActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.feedback.FeedbackActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.Transparent.NoDim"
+            android:name="cz.mobilesoft.coreblock.scene.permission.PermissionAutoStartHintActivity"
+            android:noHistory="true"/>
+        <activity
+            android:theme="@style/AppTheme.Transparent.NoDim"
+            android:name="cz.mobilesoft.coreblock.scene.permission.PermissionBaseWizardActivity"
+            android:noHistory="true"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.help.restorepurchase.RestorePurchaseActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.selection.hint.KeywordsLearnMoreActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.chatbot.ChatBotActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.feedback.backdoorcode.BackdoorFeedbackActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.dashboard.profile.account.AccountDetailActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.signin.AppleSignInActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/title_activity_bubble"
+            android:name="cz.mobilesoft.coreblock.scene.dev_events.DevEventsActivity"
+            android:allowEmbedded="true"
+            android:resizeableActivity="true"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.quickblock.timer.QuickBlockTimeSelectActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.quickblock.pomodoro.PomodoroActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.settings.excludedBrowsers.ExcludedUnsupportedBrowsersActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.subscriptionob.SubscriptionOnboardingActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.premium.premium_expiring.PremiumExpiringActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.emergency_unblock.EmergencyUnblockActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.auto_trial.AutoTrialActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.settings.icon_select.AppIconSelectActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.settings.developer.DeveloperSettingsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.settings.developer.remoteconfigvalues.RemoteConfigValuesActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.insights.InsightsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.customBlockScreen.CustomBlockScreenActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.insights.settings.InsightsSettingsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.insights.weekly.WeeklyInsightsActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.insights.trial_summary.TrialSummaryActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.timenudge.TimeNudgeActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.timenudge.select.TimeNudgeSelectActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.app_feel.AppFeelActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.dashboard.shortcuts.do_not_delete_me.DoNotDeleteMeActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.sharing.SocialsSharingActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.streaks.detail.StreakDetailActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.streaks.milestone.StreakMilestoneActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.streaks.feedback.StreakFeedbackActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.premium.trial_notifications.TrialRemindersActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.strictmode.StrictModeInfoActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.schedule.preview.SchedulePreviewActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.schedule.detail.ConflictingSchedulesExplanationActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.email_consent.EmailCommunicationConsentActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="cz.mobilesoft.coreblock.scene.more.guestpassshare.GuestPassShareActivity"/>
+        <service
+            android:name="cz.mobilesoft.coreblock.service.UsageLimitEndOverlayService"
+            android:exported="false"/>
+        <service
+            android:name="cz.mobilesoft.coreblock.service.CheckGrantedPermissionService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="shortService">
+            <intent-filter>
+                <action android:name=".service.CheckGrantedPermissionService"/>
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="cz.mobilesoft.coreblock.service.receiver.LocationProviderChangedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:label="@string/app_name"
+            android:name="cz.mobilesoft.coreblock.service.receiver.LockieDeviceAdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="false"
+            android:description="@string/device_admin_description">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.coreblock.service.receiver.TimeChangedReceiver"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cz.mobilesoft.coreblock.service.receiver.AppUpdatedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:label="@string/title_basic_block"
+            android:icon="@drawable/ic_quick_block_24dp"
+            android:name="cz.mobilesoft.coreblock.service.receiver.QuickBlockTileService"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="cz.mobilesoft.coreblock.scene.intro.BlockingTestOverlayService"
+            android:exported="false"/>
+        <activity
+            android:name="com.revenuecat.purchases.ui.revenuecatui.activity.PaywallActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.revenuecat.purchases.ui.revenuecatui.customercenter.CustomerCenterActivity"
+            android:exported="false"/>
+        <activity
+            android:name="androidx.glance.appwidget.action.ActionTrampolineActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <activity
+            android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline"
+            android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline"
+            android:launchMode="singleInstance"
+            android:noHistory="true"/>
+        <receiver
+            android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="androidx.glance.appwidget.MyPackageReplacedReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="androidx.glance.appwidget.GlanceRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="true"/>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:exported="false"
+            android:authorities="cz.mobilesoft.appblock.mobileadsinitprovider"
+            android:initOrder="100"/>
+        <service
+            android:name="com.google.android.gms.ads.AdService"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity
+            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true"/>
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/PlacesAutocompleteOverlay"
+            android:label="@string/places_autocomplete_label"
+            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.google.android.libraries.places.widget.BasicPlaceAutocompleteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.google.android.libraries.places.widget.PlaceAutocompleteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.google.android.libraries.places.widget.internal.photoviewer.PlacesLightboxActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="dev.doubledot.doki.ui.DokiActivity"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Material.Dialog.Alert"
+            android:name="com.revenuecat.purchases.SimulatedStoreErrorDialogActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation"/>
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="8.3.0"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/com_facebook_activity_theme"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.cz.mobilesoft.appblock"/>
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="genericidp"
+                    android:host="firebase.auth"
+                    android:path="/"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="recaptcha"
+                    android:host="firebase.auth"
+                    android:path="/"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <provider
+            android:name="com.applovin.sdk.AppLovinInitProvider"
+            android:exported="false"
+            android:authorities="cz.mobilesoft.appblock.applovininitprovider"
+            android:initOrder="101"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.applovin.adview.AppLovinFullscreenActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name="com.applovin.sdk.AppLovinWebViewActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerDetailActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"
+            android:name="com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"
+            android:name="com.applovin.creative.MaxCreativeDebuggerActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"
+            android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale"/>
+        <service
+            android:name="com.applovin.impl.adview.activity.FullscreenAdService"
+            android:exported="false"
+            android:stopWithTask="false"/>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true"/>
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false">
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity
+            android:theme="@style/Theme.Hidden"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"
+            android:fitsSystemWindows="true"/>
+        <activity
+            android:theme="@style/Theme.Hidden"
+            android:name="androidx.credentials.playservices.IdentityCredentialApiHiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"
+            android:fitsSystemWindows="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="cz.mobilesoft.appblock.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="cz.mobilesoft.appblock.FacebookInitProvider"/>
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager.CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.evernote.android.job.v21.PlatformJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            android:name="com.evernote.android.job.v14.PlatformAlarmService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"
+            android:exported="false"/>
+        <receiver
+            android:name="com.evernote.android.job.v14.PlatformAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.v14.RUN_JOB"/>
+                <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.evernote.android.job.JobBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.evernote.android.job.gcm.PlatformGcmService"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.evernote.android.job.JobRescheduleService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            android:name="androidx.core.widget.RemoteViewsCompatService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <provider
+            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+            android:exported="false"
+            android:authorities="cz.mobilesoft.appblock.AudienceNetworkContentProvider"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.jakewharton.processphoenix.PhoenixActivity"
+            android:exported="false"
+            android:process=":phoenix"/>
+        <service
+            android:name="com.jakewharton.processphoenix.PhoenixService"
+            android:exported="false"
+            android:process=":phoenix"/>
+        <activity
+            android:theme="@style/Theme.PlayCore.Transparent"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"/>
+        <activity
+            android:name="com.pairip.licensecheck.LicenseActivity"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="3"/>
+    </application>
+</manifest>

@@ -1,0 +1,1 @@
+This APK contains 58330 classes. Smali disassembly is skipped above 30000 classes to keep decompilation fast. The Java sources are complete.

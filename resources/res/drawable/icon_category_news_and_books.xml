@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#5059c9"
+        android:pathData="M20.5,3.5V20.5C20.5,21.052 20.052,21.5 19.5,21.5H17V2.5H19.5C20.052,2.5 20.5,2.947 20.5,3.5Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_news_and_books__0_res_0x7f080080"
+        android:pathData="M19.5,3.5V20.5C19.5,21.052 19.052,21.5 18.5,21.5H15.5V2.5H18.5C19.052,2.5 19.5,2.947 19.5,3.5Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_news_and_books__1_res_0x7f080081"
+        android:pathData="M3.5,3.5V20.5C3.5,21.052 3.947,21.5 4.5,21.5H5.5V2.5H4.5C3.947,2.5 3.5,2.947 3.5,3.5Z"/>
+    <path
+        android:fillColor="#7b83eb"
+        android:pathData="M17.5,2.5H5.5V21.5H17.5C18.052,21.5 18.5,21.052 18.5,20.5V3.5C18.5,2.947 18.052,2.5 17.5,2.5Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_news_and_books__2_res_0x7f080082"
+        android:pathData="M11,21.5H7V23.75C7,23.935 7.195,24.056 7.362,23.973L9,23.154L10.638,23.973C10.804,24.056 11,23.935 11,23.75V21.5Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_news_and_books__3_res_0x7f080083"
+        android:pathData="M8.5,8.5C9.052,8.5 9.5,8.052 9.5,7.5C9.5,6.948 9.052,6.5 8.5,6.5C7.948,6.5 7.5,6.948 7.5,7.5C7.5,8.052 7.948,8.5 8.5,8.5Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_news_and_books__4_res_0x7f080084"
+        android:pathData="M8.5,12.5C9.052,12.5 9.5,12.052 9.5,11.5C9.5,10.948 9.052,10.5 8.5,10.5C7.948,10.5 7.5,10.948 7.5,11.5C7.5,12.052 7.948,12.5 8.5,12.5Z"/>
+    <path
+        android:fillColor="@drawable/_icon_category_news_and_books__5_res_0x7f080085"
+        android:pathData="M8.5,16.5C9.052,16.5 9.5,16.052 9.5,15.5C9.5,14.948 9.052,14.5 8.5,14.5C7.948,14.5 7.5,14.948 7.5,15.5C7.5,16.052 7.948,16.5 8.5,16.5Z"/>
+</vector>

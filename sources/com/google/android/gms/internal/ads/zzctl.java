@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzctl implements zzdcr {
+    private final zzfkf zza;
+    private final zzcfi zzb;
+
+    zzctl(zzfkf zzfkfVar, zzcfi zzcfiVar) {
+        this.zza = zzfkfVar;
+        this.zzb = zzcfiVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcr
+    public final void zzds() {
+        if (this.zza.zzar) {
+            this.zzb.zzi();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcr
+    public final void zzdK() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcr
+    public final void zzdt() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcr
+    public final void zze() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcr
+    public final void zzf() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcr
+    public final void zzd(zzcbp zzcbpVar, String str, String str2) {
+    }
+}

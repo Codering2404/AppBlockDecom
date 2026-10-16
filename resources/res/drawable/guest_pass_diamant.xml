@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="49dp"
+    android:width="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <path
+        android:fillColor="@drawable/_guest_pass_diamant__0_res_0x7f080012"
+        android:pathData="M7.421,10.997L17.553,1.962L41.22,8.491L45.286,21.443L24.713,22.166L7.421,10.997Z"/>
+    <path
+        android:fillColor="@drawable/_guest_pass_diamant__1_res_0x7f080013"
+        android:pathData="M7.415,10.99L45.28,21.437L18.934,43.084L7.415,10.99Z"/>
+    <path
+        android:fillColor="@drawable/_guest_pass_diamant__2_res_0x7f080014"
+        android:pathData="M18.067,13.933L18.938,43.089L34.634,18.504L18.067,13.933Z"/>
+    <path
+        android:fillColor="@drawable/_guest_pass_diamant__3_res_0x7f080015"
+        android:pathData="M17.544,1.958L18.061,13.93L34.628,18.501L41.21,8.487L17.544,1.958Z"/>
+    <path
+        android:fillColor="@drawable/_guest_pass_diamant__4_res_0x7f080016"
+        android:pathData="M18.062,13.932L29.378,5.224L34.629,18.503L18.062,13.932Z"/>
+</vector>

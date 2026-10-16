@@ -1,0 +1,29 @@
+package com.google.crypto.tink.shaded.protobuf;
+
+import java.nio.ByteBuffer;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes6.dex */
+@CheckReturnValue
+abstract class BufferAllocator {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private static final BufferAllocator f86691a = new BufferAllocator() { // from class: com.google.crypto.tink.shaded.protobuf.BufferAllocator.1
+        @Override // com.google.crypto.tink.shaded.protobuf.BufferAllocator
+        public AllocatedBuffer a(int i3) {
+            return AllocatedBuffer.i(ByteBuffer.allocateDirect(i3));
+        }
+
+        @Override // com.google.crypto.tink.shaded.protobuf.BufferAllocator
+        public AllocatedBuffer b(int i3) {
+            return AllocatedBuffer.j(new byte[i3]);
+        }
+    };
+
+    BufferAllocator() {
+    }
+
+    public abstract AllocatedBuffer a(int i3);
+
+    public abstract AllocatedBuffer b(int i3);
+}

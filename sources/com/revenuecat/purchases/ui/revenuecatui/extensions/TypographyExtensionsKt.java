@@ -1,0 +1,34 @@
+package com.revenuecat.purchases.ui.revenuecatui.extensions;
+
+import androidx.compose.material3.Typography;
+import androidx.compose.ui.text.TextStyle;
+import androidx.compose.ui.text.font.FontFamily;
+import com.revenuecat.purchases.ui.revenuecatui.fonts.FontProvider;
+import com.revenuecat.purchases.ui.revenuecatui.fonts.TypographyType;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes7.dex */
+@Metadata
+public final class TypographyExtensionsKt {
+    public static final Typography copyWithFontProvider(Typography typography, FontProvider fontProvider) {
+        Intrinsics.checkNotNullParameter(typography, "<this>");
+        Intrinsics.checkNotNullParameter(fontProvider, "fontProvider");
+        return typography.a(modifyFontIfNeeded(typography.e(), TypographyType.DISPLAY_LARGE, fontProvider), modifyFontIfNeeded(typography.f(), TypographyType.DISPLAY_MEDIUM, fontProvider), modifyFontIfNeeded(typography.g(), TypographyType.DISPLAY_SMALL, fontProvider), modifyFontIfNeeded(typography.h(), TypographyType.HEADLINE_LARGE, fontProvider), modifyFontIfNeeded(typography.i(), TypographyType.HEADLINE_MEDIUM, fontProvider), modifyFontIfNeeded(typography.j(), TypographyType.HEADLINE_SMALL, fontProvider), modifyFontIfNeeded(typography.n(), TypographyType.TITLE_LARGE, fontProvider), modifyFontIfNeeded(typography.o(), TypographyType.TITLE_MEDIUM, fontProvider), modifyFontIfNeeded(typography.p(), TypographyType.TITLE_SMALL, fontProvider), modifyFontIfNeeded(typography.b(), TypographyType.BODY_LARGE, fontProvider), modifyFontIfNeeded(typography.c(), TypographyType.BODY_MEDIUM, fontProvider), modifyFontIfNeeded(typography.d(), TypographyType.BODY_SMALL, fontProvider), modifyFontIfNeeded(typography.k(), TypographyType.LABEL_LARGE, fontProvider), modifyFontIfNeeded(typography.l(), TypographyType.LABEL_MEDIUM, fontProvider), modifyFontIfNeeded(typography.m(), TypographyType.LABEL_SMALL, fontProvider));
+    }
+
+    private static final TextStyle modifyFontIfNeeded(TextStyle textStyle, TypographyType typographyType, FontProvider fontProvider) {
+        FontFamily font = fontProvider.getFont(typographyType);
+        return font == null ? textStyle : TextStyle.e(textStyle, 0L, 0L, null, null, null, font, null, 0L, null, null, null, 0L, null, null, null, 0, 0, 0L, null, null, null, 0, 0, null, 16777183, null);
+    }
+}

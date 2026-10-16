@@ -1,0 +1,60 @@
+package com.facebook.ads.redexgen.core;
+
+import android.content.SharedPreferences;
+import com.applovin.exoplayer2.common.base.Ascii;
+import com.facebook.ads.internal.util.process.ProcessUtils;
+import com.facebook.stetho.dumpapp.Framer;
+import java.util.Arrays;
+
+/* JADX INFO: loaded from: assets/audience_network/classes2.dex */
+public final class SY {
+    public static byte[] A01;
+    public SharedPreferences A00;
+
+    static {
+        A01();
+    }
+
+    public static String A00(int i3, int i4, int i5) {
+        byte[] bArrCopyOfRange = Arrays.copyOfRange(A01, i3, i3 + i4);
+        for (int i6 = 0; i6 < bArrCopyOfRange.length; i6++) {
+            bArrCopyOfRange[i6] = (byte) ((bArrCopyOfRange[i6] ^ i5) ^ 127);
+        }
+        return new String(bArrCopyOfRange);
+    }
+
+    public static void A01() {
+        A01 = new byte[]{41, 44, 62, Framer.STDIN_FRAME_PREFIX, 58, 60, Framer.ENTER_FRAME_PREFIX, 59, Framer.ENTER_FRAME_PREFIX, 38, 47, 1, 44, 80, 69, 69, 67, 88, 83, 68, 69, 88, 94, Framer.STDIN_REQUEST_FRAME_PREFIX, Framer.EXIT_FRAME_PREFIX, 85, 93, Framer.STDIN_REQUEST_FRAME_PREFIX, 93, 86, 91, 106, 109, Ascii.CAN, Ascii.DC4, Ascii.SYN, 85, Ascii.GS, Ascii.SUB, Ascii.CAN, Ascii.RS, Ascii.EM, Ascii.DC4, Ascii.DC4, Ascii.DLE, 85, Ascii.SUB, Ascii.US, 8, 85, Ascii.DC2, Ascii.US, Ascii.GS, Ascii.SUB, 115, 118, 114, 118, 107, 94, 123, 75, 109, 126, 124, 116, 118, 113, Framer.EXIT_FRAME_PREFIX};
+    }
+
+    public SY(T8 t8) {
+        this.A00 = t8.getSharedPreferences(ProcessUtils.getProcessSpecificName(A00(33, 21, 4), t8), 0);
+    }
+
+    public final SX A02() {
+        SharedPreferences sharedPreferences = this.A00;
+        String strA00 = A00(0, 13, 55);
+        if (sharedPreferences.contains(strA00)) {
+            return new SX(this.A00.getString(strA00, A00(0, 0, 75)), this.A00.getBoolean(A00(54, 15, 96), false), SW.A08, this.A00.getLong(A00(26, 7, 65), -1L));
+        }
+        return SX.A00();
+    }
+
+    public final String A03() {
+        return this.A00.getString(A00(13, 13, 78), A00(0, 0, 75));
+    }
+
+    public final void A04(SX sx) {
+        SharedPreferences.Editor editorEdit = this.A00.edit();
+        editorEdit.putString(A00(0, 13, 55), sx.A03());
+        editorEdit.putBoolean(A00(54, 15, 96), sx.A04());
+        editorEdit.putLong(A00(26, 7, 65), sx.A01());
+        editorEdit.apply();
+    }
+
+    public final void A05(String str) {
+        SharedPreferences.Editor editorEdit = this.A00.edit();
+        editorEdit.putString(A00(13, 13, 78), str);
+        editorEdit.apply();
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="280dp"
+    android:width="190dp"
+    android:viewportWidth="190"
+    android:viewportHeight="280">
+    <path
+        android:fillColor="@drawable/_ic_auto_trial_card__0_res_0x7f080023"
+        android:pathData="M20,0L170,0A20,20 0,0 1,190 20L190,260A20,20 0,0 1,170 280L20,280A20,20 0,0 1,0 260L0,20A20,20 0,0 1,20 0z"/>
+    <path
+        android:fillColor="@drawable/_ic_auto_trial_card__1_res_0x7f080024"
+        android:pathData="M58,124.9L71.93,104H118.39L132.32,124.9L95.16,136.21L58,124.9Z"
+        android:strokeAlpha="0.3"
+        android:fillAlpha="0.3"/>
+    <path
+        android:fillColor="@drawable/_ic_auto_trial_card__2_res_0x7f080025"
+        android:pathData="M58,124.9H132.32L95.16,176L58,124.9Z"
+        android:strokeAlpha="0.3"
+        android:fillAlpha="0.3"/>
+    <path
+        android:fillColor="@drawable/_ic_auto_trial_card__3_res_0x7f080026"
+        android:pathData="M78.9,124.9L95.16,176L111.42,124.9H78.9Z"
+        android:strokeAlpha="0.3"
+        android:fillAlpha="0.3"/>
+    <path
+        android:fillColor="@drawable/_ic_auto_trial_card__4_res_0x7f080027"
+        android:pathData="M71.93,104L78.9,124.9H111.42L118.39,104H71.93Z"
+        android:strokeAlpha="0.3"
+        android:fillAlpha="0.3"/>
+    <path
+        android:fillColor="@drawable/_ic_auto_trial_card__5_res_0x7f080028"
+        android:pathData="M78.9,124.9L95.16,104L111.42,124.9H78.9Z"
+        android:strokeAlpha="0.3"
+        android:fillAlpha="0.3"/>
+</vector>

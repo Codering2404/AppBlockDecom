@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="48dp"
+    android:width="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@drawable/_ic_emoji_other__0_res_0x7f080042"
+        android:pathData="M30.5,34.5H17.5C17.5,35.426 17.5,38.779 17.5,38.779C17.5,42.369 20.41,45.279 24,45.279C27.59,45.279 30.5,42.369 30.5,38.779C30.5,38.779 30.5,35.426 30.5,34.5Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_other__1_res_0x7f080043"
+        android:pathData="M37,15C37,7.821 31.179,2 24,2C16.821,2 11,7.821 11,15C11,22.583 17.5,28 17.5,32.117V34.5H30.5V32.117C30.5,28 37,22.583 37,15Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_other__2_res_0x7f080044"
+        android:pathData="M20.829,17.142L21.032,17C21.13,17.212 23.429,22.299 23.429,32H21.716C21.716,25.92 20.752,21.751 20.108,19.644C19.821,18.701 20.121,17.64 20.829,17.142Z"/>
+    <path
+        android:fillColor="@drawable/_ic_emoji_other__3_res_0x7f080045"
+        android:pathData="M24.572,32C24.572,22.299 26.871,17.212 26.969,17L27.174,17.145C27.881,17.644 28.179,18.702 27.891,19.644C27.248,21.75 26.285,25.919 26.285,32H24.572Z"/>
+</vector>

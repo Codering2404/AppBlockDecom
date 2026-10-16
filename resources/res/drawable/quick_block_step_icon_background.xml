@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:step_complete="true">
+        <layer-list>
+            <item
+                android:drawable="@drawable/ic_check"
+                android:left="8dp"
+                android:top="8dp"
+                android:right="8dp"
+                android:bottom="8dp"/>
+            <item>
+                <shape android:shape="oval">
+                    <stroke
+                        android:width="1dp"
+                        android:color="@color/ok"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item app:step_error="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/critical"/>
+        </shape>
+    </item>
+    <item app:step_current="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/accent"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="1dp"
+                android:color="@color/main_disabled"/>
+        </shape>
+    </item>
+</selector>

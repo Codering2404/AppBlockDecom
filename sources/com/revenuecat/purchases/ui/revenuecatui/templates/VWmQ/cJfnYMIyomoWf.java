@@ -1,0 +1,53 @@
+package com.revenuecat.purchases.ui.revenuecatui.templates.VWmQ;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class cJfnYMIyomoWf {
+    public static String ANEDaKmInHU;
+    public static String BgjYCcZwbz;
+    public static String BwtPAlahyt;
+    public static String CmqChhRsdFqzmpj;
+    public static String CwenEP;
+    public static String DWISNMBxMBjany;
+    public static String EnM;
+    public static String HrsbamsVm;
+    public static String JAvyplVvGvbquE;
+    public static String KqpHB;
+    public static String MsoOYhPJVrZNQ;
+    public static String NXVhWGwnVQEsmYF;
+    public static String NcwNHHbrX;
+    public static String OvlqXsnarl;
+    public static String PzW;
+    public static String RTO;
+    public static String SYKgZIYKXNKy;
+    public static String VMsyMZxXWLknP;
+    public static String VrMXNBUUVqLl;
+    public static String WjIJbqyTraQx;
+    public static String WpJ;
+    public static String XZbfWc;
+    public static String YNgIQxTgc;
+    public static String YbQ;
+    public static String aCzKF;
+    public static String aOiv;
+    public static String adOTSM;
+    public static String ahfkI;
+    public static String bHZAihvYGET;
+    public static String bQzWQKkbYJ;
+    public static String eNgnsBvmho;
+    public static String ehzaFXKuNNL;
+    public static String ekdOR;
+    public static String fbSfutr;
+    public static String izXq;
+    public static String jktHcD;
+    public static String kgnB;
+    public static String kquxuCPPA;
+    public static String ljiHPVKMbBw;
+    public static String mXGhYk;
+    public static String mlnUNT;
+    public static String tXpPFjRak;
+    public static String uGknqOUKqWPYT;
+    public static String xOBkps;
+    public static String xSnccKhmN;
+    public static String yRkiHBLaERJlbi;
+    public static String yTezcOFrrMYC;
+    public static String zBwcOOPC;
+}

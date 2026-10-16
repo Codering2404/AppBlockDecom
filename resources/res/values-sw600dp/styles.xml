@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.DashboardCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="android:layout_marginTop">@dimen/cardview_bottom_margin</item>
+        <item name="android:layout_marginStart">@dimen/cardview_inner_margin</item>
+        <item name="android:layout_marginEnd">@dimen/cardview_inner_margin</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">@dimen/cardview_radius</item>
+        <item name="cardElevation">@dimen/cardview_elevation</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+    <style name="AppTheme.ProfileCardView" parent="@style/CardView">
+        <item name="android:layout_marginLeft">@dimen/cardview_inner_margin</item>
+        <item name="android:layout_marginTop">@dimen/cardview_bottom_margin</item>
+        <item name="android:layout_marginRight">@dimen/cardview_inner_margin</item>
+        <item name="cardCornerRadius">@dimen/cardview_radius</item>
+        <item name="cardElevation">@dimen/cardview_elevation</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

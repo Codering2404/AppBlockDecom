@@ -1,0 +1,158 @@
+package io.reactivex.internal.operators.single;
+
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.SingleObserver;
+import io.reactivex.SingleSource;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.exceptions.Exceptions;
+import io.reactivex.functions.Function;
+import io.reactivex.internal.disposables.DisposableHelper;
+import io.reactivex.internal.functions.ObjectHelper;
+import io.reactivex.internal.observers.BasicIntQueueDisposable;
+import java.util.Iterator;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes9.dex */
+public final class SingleFlatMapIterableObservable<T, R> extends Observable<R> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    final SingleSource f138851a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    final Function f138852b;
+
+    /* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+    static final class FlatMapIterableObserver<T, R> extends BasicIntQueueDisposable<R> implements SingleObserver<T> {
+        private static final long serialVersionUID = -8938804753851907758L;
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        final Observer f138853a;
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        final Function f138854b;
+
+        /* JADX INFO: renamed from: c, reason: collision with root package name */
+        Disposable f138855c;
+
+        /* JADX INFO: renamed from: d, reason: collision with root package name */
+        volatile Iterator f138856d;
+
+        /* JADX INFO: renamed from: f, reason: collision with root package name */
+        volatile boolean f138857f;
+
+        /* JADX INFO: renamed from: g, reason: collision with root package name */
+        boolean f138858g;
+
+        FlatMapIterableObserver(Observer observer, Function function) {
+            this.f138853a = observer;
+            this.f138854b = function;
+        }
+
+        @Override // io.reactivex.SingleObserver
+        public void a(Disposable disposable) {
+            if (DisposableHelper.i(this.f138855c, disposable)) {
+                this.f138855c = disposable;
+                this.f138853a.a(this);
+            }
+        }
+
+        @Override // io.reactivex.internal.fuseable.SimpleQueue
+        public void clear() {
+            this.f138856d = null;
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public void dispose() {
+            this.f138857f = true;
+            this.f138855c.dispose();
+            this.f138855c = DisposableHelper.DISPOSED;
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public boolean e() {
+            return this.f138857f;
+        }
+
+        @Override // io.reactivex.internal.fuseable.SimpleQueue
+        public boolean isEmpty() {
+            return this.f138856d == null;
+        }
+
+        @Override // io.reactivex.internal.fuseable.QueueFuseable
+        public int l(int i3) {
+            if ((i3 & 2) == 0) {
+                return 0;
+            }
+            this.f138858g = true;
+            return 2;
+        }
+
+        @Override // io.reactivex.SingleObserver
+        public void onError(Throwable th) {
+            this.f138855c = DisposableHelper.DISPOSED;
+            this.f138853a.onError(th);
+        }
+
+        @Override // io.reactivex.SingleObserver
+        public void onSuccess(Object obj) {
+            Observer observer = this.f138853a;
+            try {
+                Iterator<T> it = ((Iterable) this.f138854b.apply(obj)).iterator();
+                if (!it.hasNext()) {
+                    observer.onComplete();
+                    return;
+                }
+                if (this.f138858g) {
+                    this.f138856d = it;
+                    observer.h(null);
+                    observer.onComplete();
+                    return;
+                }
+                while (!this.f138857f) {
+                    try {
+                        observer.h(it.next());
+                        if (this.f138857f) {
+                            return;
+                        }
+                        try {
+                            if (!it.hasNext()) {
+                                observer.onComplete();
+                                return;
+                            }
+                        } catch (Throwable th) {
+                            Exceptions.b(th);
+                            observer.onError(th);
+                            return;
+                        }
+                    } catch (Throwable th2) {
+                        Exceptions.b(th2);
+                        observer.onError(th2);
+                        return;
+                    }
+                }
+            } catch (Throwable th3) {
+                Exceptions.b(th3);
+                this.f138853a.onError(th3);
+            }
+        }
+
+        @Override // io.reactivex.internal.fuseable.SimpleQueue
+        public Object poll() {
+            Iterator it = this.f138856d;
+            if (it == null) {
+                return null;
+            }
+            Object objD = ObjectHelper.d(it.next(), "The iterator returned a null value");
+            if (!it.hasNext()) {
+                this.f138856d = null;
+            }
+            return objD;
+        }
+    }
+
+    @Override // io.reactivex.Observable
+    protected void u(Observer observer) {
+        this.f138851a.b(new FlatMapIterableObserver(observer, this.f138852b));
+    }
+}

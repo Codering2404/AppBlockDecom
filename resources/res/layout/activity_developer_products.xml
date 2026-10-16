@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title=""
+        style="@style/AppTheme.Toolbar.Surface"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:id="@+id/developer_products_nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation_developer_products"/>
+</LinearLayout>

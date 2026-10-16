@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import java.util.Objects;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+final class zzerm implements zzdno {
+    final /* synthetic */ zzfkf zza;
+
+    zzerm(zzerp zzerpVar, zzfkf zzfkfVar) {
+        this.zza = zzfkfVar;
+        Objects.requireNonNull(zzerpVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdno
+    public final zzfkf zzb() {
+        return this.zza;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdno
+    public final void zza(boolean z2, Context context, zzdde zzddeVar) {
+    }
+}

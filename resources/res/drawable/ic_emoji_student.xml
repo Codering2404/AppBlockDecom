@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="48dp"
+    android:width="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <group>
+        <clip-path android:pathData="M0,0h48v48h-48z"/>
+        <path
+            android:fillColor="#3937b2"
+            android:pathData="M46,16.815H44V38H46V16.815Z"/>
+        <path
+            android:fillColor="#3937b2"
+            android:pathData="M45,42.6C45,42.6 47,40.105 47,39C47,37.895 46.105,37 45,37C43.895,37 43,37.895 43,39C43,40.105 45,42.6 45,42.6Z"/>
+        <path
+            android:fillColor="@drawable/_ic_emoji_student__0_res_0x7f08004c"
+            android:pathData="M22.352,28.385L0.659,19.346C-0.22,18.98 -0.22,17.734 0.659,17.368L22.352,8.33C23.407,7.89 24.594,7.89 25.649,8.33L47.341,17.368C48.22,17.734 48.22,18.98 47.341,19.346L25.649,28.384C24.593,28.824 23.407,28.824 22.352,28.385Z"/>
+        <path
+            android:fillColor="@drawable/_ic_emoji_student__1_res_0x7f08004d"
+            android:pathData="M24,18C15.716,18 9,19.439 9,21.214V35C17.571,35 24,39 24,39C24,39 30.429,35 39,35V21.214C39,19.439 32.284,18 24,18Z"/>
+    </group>
+</vector>

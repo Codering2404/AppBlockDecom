@@ -1,0 +1,25 @@
+package com.google.android.libraries.places.internal;
+
+import java.util.Objects;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes6.dex */
+final class zzbti implements Runnable {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    final /* synthetic */ zzbua f76851a;
+
+    zzbti(zzbua zzbuaVar) {
+        Objects.requireNonNull(zzbuaVar);
+        this.f76851a = zzbuaVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        zzbua zzbuaVar = this.f76851a;
+        zzbuaVar.I(null);
+        zzbuaVar.D().a(2, "CONNECTING after backoff");
+        zzbuaVar.w(zzbjn.CONNECTING);
+        zzbuaVar.u();
+    }
+}

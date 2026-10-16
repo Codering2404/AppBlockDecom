@@ -1,0 +1,37 @@
+package androidx.window.area;
+
+import androidx.window.reflection.ReflectionUtils;
+import java.lang.reflect.Method;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata
+final class SafeWindowAreaComponentProvider$isWindowAreaProviderValid$1 extends Lambda implements Function0<Boolean> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    final /* synthetic */ Object f54031a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    final /* synthetic */ SafeWindowAreaComponentProvider f54032b;
+
+    @Override // kotlin.jvm.functions.Function0
+    public final Boolean invoke() throws NoSuchMethodException {
+        Method getWindowAreaComponentMethod = this.f54031a.getClass().getMethod("getWindowAreaComponent", null);
+        ReflectionUtils reflectionUtils = ReflectionUtils.f54439a;
+        Intrinsics.checkNotNullExpressionValue(getWindowAreaComponentMethod, "getWindowAreaComponentMethod");
+        return Boolean.valueOf(reflectionUtils.e(getWindowAreaComponentMethod) && reflectionUtils.b(getWindowAreaComponentMethod, this.f54032b.b()));
+    }
+}

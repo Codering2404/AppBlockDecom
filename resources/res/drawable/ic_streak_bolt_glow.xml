@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="256dp"
+    android:width="256dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+    <group>
+        <clip-path android:pathData="M0,0h256v256h-256z"/>
+        <group android:scaleY="1.7414">
+            <path
+                android:fillColor="@drawable/_ic_streak_bolt_glow__0_res_0x7f080067"
+                android:pathData="M127.887,73.2770H206.867L103.436,152.2695L127.871,73.2822H48.8906L152.322,-5.7100L127.887,73.2770Z"
+                android:fillAlpha="0.28"/>
+            <path
+                android:fillColor="@drawable/_ic_streak_bolt_glow__1_res_0x7f080068"
+                android:pathData="M127.885,73.2782H185.228L110.134,130.6278L127.874,73.2816H70.5312L145.625,15.9320L127.885,73.2782Z"
+                android:fillAlpha="0.36"/>
+            <path
+                android:fillColor="@drawable/_ic_streak_bolt_glow__2_res_0x7f080069"
+                android:pathData="M127.884,73.2787H166.173L116.034,111.5714L127.878,73.2810H89.5898L139.729,34.9888L127.884,73.2787Z"
+                android:fillAlpha="0.41"/>
+        </group>
+    </group>
+</vector>

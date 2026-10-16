@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.p002firebaseauthapi;
+
+import android.os.Handler;
+import android.os.Looper;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zze extends Handler {
+    public zze() {
+        Looper.getMainLooper();
+    }
+
+    public zze(Looper looper) {
+        super(looper);
+        Looper.getMainLooper();
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/get_premium"
+    app:icon="@drawable/ic_premium_diamond_24dp"
+    app:iconGravity="textStart"
+    app:iconPadding="12dp"
+    app:iconTint="@color/on_premium"
+    style="@style/AppTheme.PremiumAccentButton"/>

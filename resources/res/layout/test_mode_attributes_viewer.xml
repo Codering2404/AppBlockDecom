@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#0d0f12"
+    android:paddingTop="20dp"
+    android:paddingBottom="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="?attr/homeAsUpIndicator"
+            android:contentDescription="Back"
+            android:layout_marginEnd="12dp"
+            app:tint="@color/sw_cyan"/>
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:id="@+id/viewer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="#b3ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tap an attribute to copy its value."/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/attributes_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

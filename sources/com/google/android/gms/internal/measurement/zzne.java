@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.measurement;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+final class zzne {
+    public final zzot zza;
+    public final zzot zzc;
+    public final Object zzb = "";
+    public final Object zzd = "";
+
+    public zzne(zzot zzotVar, Object obj, zzot zzotVar2, Object obj2) {
+        this.zza = zzotVar;
+        this.zzc = zzotVar2;
+    }
+}

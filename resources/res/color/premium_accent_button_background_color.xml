@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:color="@color/main_light_on_surface"/>
+    <item android:color="@color/premium_accent"/>
+</selector>

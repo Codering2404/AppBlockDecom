@@ -1,0 +1,22 @@
+package com.facebook.ads.internal.api;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes4.dex */
+public interface NativeAdViewTypeApi {
+    public static final int HEIGHT_100 = 0;
+    public static final int HEIGHT_120 = 1;
+
+    @Deprecated
+    public static final int HEIGHT_300 = 2;
+
+    @Deprecated
+    public static final int HEIGHT_400 = 3;
+    public static final int HEIGHT_50 = 4;
+    public static final int RECT_DYNAMIC = 5;
+
+    int getHeight();
+
+    int getValue();
+
+    int getWidth();
+}

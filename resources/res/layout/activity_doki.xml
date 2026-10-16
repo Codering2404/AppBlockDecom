@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/AppTheme.Toolbar.Surface"/>
+    <dev.doubledot.doki.views.DokiContentView
+        android:id="@+id/dokiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dokiActiveIconsColor="@color/main"
+        app:dokiBackgroundColor="@color/background"
+        app:dokiPrimaryTextColor="@color/main"
+        app:dokiSecondaryTextColor="@color/main_secondary"/>
+</LinearLayout>

@@ -1,0 +1,62 @@
+package com.revenuecat.purchases;
+
+import kotlin.Metadata;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes4.dex */
+@Metadata
+public enum PurchasesErrorCode {
+    UnknownError(0, "Unknown error. Check the underlying error for more details."),
+    PurchaseCancelledError(1, "Purchase was cancelled."),
+    StoreProblemError(2, "There was a problem with the store."),
+    PurchaseNotAllowedError(3, "The device or user is not allowed to make the purchase."),
+    PurchaseInvalidError(4, "One or more of the arguments provided are invalid."),
+    ProductNotAvailableForPurchaseError(5, "The product is not available for purchase."),
+    ProductAlreadyPurchasedError(6, "This product is already active for the user."),
+    ReceiptAlreadyInUseError(7, "There is already another active subscriber using the same receipt."),
+    InvalidReceiptError(8, "The receipt is not valid."),
+    MissingReceiptFileError(9, "The receipt is missing."),
+    NetworkError(10, "Error performing request."),
+    InvalidCredentialsError(11, "There was a credentials issue. Check the underlying error for more details."),
+    UnexpectedBackendResponseError(12, "Received unexpected response from the backend."),
+    InvalidAppUserIdError(14, "The app user id is not valid."),
+    OperationAlreadyInProgressError(15, "The operation is already in progress."),
+    UnknownBackendError(16, "There was an unknown backend error."),
+    InvalidAppleSubscriptionKeyError(17, "Apple Subscription Key is invalid or not present. In order to provide subscription offers, you must first generate a subscription key. Please see https://docs.revenuecat.com/docs/ios-subscription-offers for more info."),
+    IneligibleError(18, "The User is ineligible for that action."),
+    InsufficientPermissionsError(19, "App does not have sufficient permissions to make purchases."),
+    PaymentPendingError(20, "The payment is pending."),
+    InvalidSubscriberAttributesError(21, "One or more of the attributes sent could not be saved."),
+    LogOutWithAnonymousUserError(22, "Called logOut but the current user is anonymous."),
+    ConfigurationError(23, "There is an issue with your configuration. Check the underlying error for more details."),
+    UnsupportedError(24, "There was a problem with the operation. Looks like we don't support that yet. Check the underlying error for more details."),
+    EmptySubscriberAttributesError(25, "A request for subscriber attributes returned none."),
+    CustomerInfoError(28, "There was a problem related to the customer info."),
+    SignatureVerificationError(36, "Request failed signature verification. Please see https://rev.cat/trusted-entitlements for more info."),
+    TestStoreSimulatedPurchaseError(42, "Purchase failure simulated successfully in Test Store.");
+
+    private final int code;
+    private final String description;
+
+    PurchasesErrorCode(int i3, String str) {
+        this.code = i3;
+        this.description = str;
+    }
+
+    public final int getCode() {
+        return this.code;
+    }
+
+    public final String getDescription() {
+        return this.description;
+    }
+}

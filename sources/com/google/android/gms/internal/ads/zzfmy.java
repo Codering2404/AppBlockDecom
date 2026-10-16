@@ -1,0 +1,144 @@
+package com.google.android.gms.internal.ads;
+
+import android.location.Location;
+import android.os.Bundle;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.TreeSet;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzfmy implements zzfmx {
+    private final Object[] zza;
+
+    public zzfmy(com.google.android.gms.ads.internal.client.zzm zzmVar, String str, int i3, String str2, com.google.android.gms.ads.internal.client.zzx zzxVar) {
+        HashSet hashSet = new HashSet(Arrays.asList(str2.split(",")));
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(str2);
+        arrayList.add(str);
+        if (hashSet.contains("networkType")) {
+            arrayList.add(Integer.valueOf(i3));
+        }
+        if (hashSet.contains("birthday")) {
+            arrayList.add(Long.valueOf(zzmVar.f69965b));
+        }
+        if (hashSet.contains("extras")) {
+            arrayList.add(zza(zzmVar.f69966c));
+        } else if (hashSet.contains("npa")) {
+            arrayList.add(zzmVar.f69966c.getString("npa"));
+        }
+        if (hashSet.contains("gender")) {
+            arrayList.add(Integer.valueOf(zzmVar.f69967d));
+        }
+        if (hashSet.contains("keywords")) {
+            List list = zzmVar.f69968f;
+            if (list != null) {
+                arrayList.add(list.toString());
+            } else {
+                arrayList.add(null);
+            }
+        }
+        if (hashSet.contains("isTestDevice")) {
+            arrayList.add(Boolean.valueOf(zzmVar.f69969g));
+        }
+        if (hashSet.contains("tagForChildDirectedTreatment")) {
+            arrayList.add(Integer.valueOf(zzmVar.f69970h));
+        }
+        if (hashSet.contains("manualImpressionsEnabled")) {
+            arrayList.add(Boolean.valueOf(zzmVar.f69971i));
+        }
+        if (hashSet.contains("publisherProvidedId")) {
+            arrayList.add(zzmVar.f69972j);
+        }
+        if (hashSet.contains("location")) {
+            Location location = zzmVar.f69974l;
+            if (location != null) {
+                arrayList.add(location.toString());
+            } else {
+                arrayList.add(null);
+            }
+        }
+        if (hashSet.contains("contentUrl")) {
+            arrayList.add(zzmVar.f69975m);
+        }
+        if (hashSet.contains("networkExtras")) {
+            arrayList.add(zza(zzmVar.f69976n));
+        }
+        if (hashSet.contains("customTargeting")) {
+            arrayList.add(zza(zzmVar.f69977o));
+        }
+        if (hashSet.contains("categoryExclusions")) {
+            List list2 = zzmVar.f69978p;
+            if (list2 != null) {
+                arrayList.add(list2.toString());
+            } else {
+                arrayList.add(null);
+            }
+        }
+        if (hashSet.contains("requestAgent")) {
+            arrayList.add(zzmVar.f69979q);
+        }
+        if (hashSet.contains("requestPackage")) {
+            arrayList.add(zzmVar.f69980r);
+        }
+        if (hashSet.contains("isDesignedForFamilies")) {
+            arrayList.add(Boolean.valueOf(zzmVar.f69981s));
+        }
+        if (hashSet.contains("tagForUnderAgeOfConsent")) {
+            arrayList.add(Integer.valueOf(zzmVar.f69983u));
+        }
+        if (hashSet.contains("maxAdContentRating")) {
+            arrayList.add(zzmVar.f69984v);
+        }
+        if (hashSet.contains("orientation")) {
+            if (zzxVar != null) {
+                arrayList.add(Integer.valueOf(zzxVar.f70032a));
+            } else {
+                arrayList.add(null);
+            }
+        }
+        this.zza = arrayList.toArray();
+    }
+
+    private static String zza(Bundle bundle) {
+        if (bundle == null) {
+            return null;
+        }
+        StringBuilder sb = new StringBuilder();
+        Iterator it = new TreeSet(bundle.keySet()).iterator();
+        while (it.hasNext()) {
+            Object obj = bundle.get((String) it.next());
+            sb.append(obj == null ? "null" : obj instanceof Bundle ? zza((Bundle) obj) : obj.toString());
+        }
+        return sb.toString();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfmx
+    public final boolean equals(Object obj) {
+        if (obj instanceof zzfmy) {
+            return Arrays.equals(this.zza, ((zzfmy) obj).zza);
+        }
+        return false;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfmx
+    public final int hashCode() {
+        return Arrays.hashCode(this.zza);
+    }
+
+    public final String toString() {
+        Object[] objArr = this.zza;
+        int iHashCode = Arrays.hashCode(objArr);
+        String string = Arrays.toString(objArr);
+        StringBuilder sb = new StringBuilder(String.valueOf(iHashCode).length() + 10 + String.valueOf(string).length() + 1);
+        sb.append("[PoolKey#");
+        sb.append(iHashCode);
+        sb.append(" ");
+        sb.append(string);
+        sb.append("]");
+        return sb.toString();
+    }
+}

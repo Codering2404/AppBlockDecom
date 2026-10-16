@@ -1,0 +1,49 @@
+package com.google.maps.android.ktx;
+
+import com.google.android.gms.maps.model.Marker;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/*  JADX ERROR: Error in decompile pass: KotlinMetadataDecompile
+    java.lang.IllegalArgumentException: Provided Metadata instance does not have metadataVersion in it and therefore is malformed and cannot be read.
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.checkMetadataVersionForRead(JvmReadUtils.kt:79)
+    	at kotlin.metadata.jvm.internal.JvmReadUtils.readMetadataImpl$kotlin_metadata_jvm(JvmReadUtils.kt:46)
+    	at kotlin.metadata.jvm.KotlinClassMetadata$Companion.readLenient(KotlinClassMetadata.kt:418)
+    	at jadx.plugins.kotlin.metadata.utils.KotlinMetadataExtKt.getKotlinClassMetadata(KotlinMetadataExt.kt:71)
+    	at jadx.plugins.kotlin.metadata.utils.KmClassWrapper$Companion.getWrapper(KmClassWrapper.kt:37)
+    	at jadx.plugins.kotlin.metadata.pass.KotlinMetadataDecompilePass.visit(KotlinMetadataDecompilePass.kt:35)
+    */
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes6.dex */
+@Metadata
+public final class MarkerDragEvent extends OnMarkerDragEvent {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final Marker f91490a;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public MarkerDragEvent(Marker marker) {
+        super(null);
+        Intrinsics.checkNotNullParameter(marker, "marker");
+        this.f91490a = marker;
+    }
+
+    public Marker a() {
+        return this.f91490a;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof MarkerDragEvent) && Intrinsics.areEqual(a(), ((MarkerDragEvent) obj).a());
+    }
+
+    public int hashCode() {
+        return a().hashCode();
+    }
+
+    public String toString() {
+        return "MarkerDragEvent(marker=" + a() + ')';
+    }
+}

@@ -1,0 +1,44 @@
+package com.google.android.gms.internal.measurement;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzgp extends zzmf implements zznn {
+    private static final zzgp zzi;
+    private int zzb;
+    private int zzd = 14;
+    private int zze = 11;
+    private int zzf = 60;
+    private int zzg = 13;
+    private int zzh = 11;
+
+    static {
+        zzgp zzgpVar = new zzgp();
+        zzi = zzgpVar;
+        zzmf.zzcp(zzgp.class, zzgpVar);
+    }
+
+    private zzgp() {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzmf
+    protected final Object zzl(int i3, Object obj, Object obj2) {
+        int i4 = i3 - 1;
+        if (i4 == 0) {
+            return (byte) 1;
+        }
+        if (i4 == 2) {
+            return zzmf.zzcq(zzi, "\u0004\u0005\u0000\u0001\u0001\u0005\u0005\u0000\u0000\u0000\u0001င\u0000\u0002င\u0001\u0003င\u0002\u0004င\u0003\u0005င\u0004", new Object[]{"zzb", "zzd", "zze", "zzf", "zzg", "zzh"});
+        }
+        if (i4 == 3) {
+            return new zzgp();
+        }
+        byte[] bArr = null;
+        if (i4 == 4) {
+            return new zzgo(bArr);
+        }
+        if (i4 == 5) {
+            return zzi;
+        }
+        throw null;
+    }
+}

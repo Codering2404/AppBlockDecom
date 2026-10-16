@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/screen_side_padding"
+    android:paddingEnd="@dimen/screen_side_padding">
+    <cz.mobilesoft.coreblock.view.badge.BadgeView
+        android:id="@android:id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        app:badge_background="@color/background_badge"
+        app:badge_elevation="@dimen/button_elevation"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.TextView.H5"/>
+    </LinearLayout>
+    <CheckBox
+        android:id="@android:id/checkbox"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        app:drawableStartCompat="?android:attr/listChoiceIndicatorMultiple"
+        style="@style/AppTheme.ToggleButton.Right"/>
+</LinearLayout>

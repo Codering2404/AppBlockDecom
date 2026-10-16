@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.gtm;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public enum zzvd implements zzxx {
+    DECLARATION(0),
+    UNVERIFIED(1);
+
+    private static final zzxy zzc = new zzxy() { // from class: com.google.android.gms.internal.gtm.zzvb
+        @Override // com.google.android.gms.internal.gtm.zzxy
+        public final /* synthetic */ zzxx zza(int i3) {
+            return zzvd.zzb(i3);
+        }
+    };
+    private final int zze;
+
+    zzvd(int i3) {
+        this.zze = i3;
+    }
+
+    public static zzvd zzb(int i3) {
+        if (i3 == 0) {
+            return DECLARATION;
+        }
+        if (i3 != 1) {
+            return null;
+        }
+        return UNVERIFIED;
+    }
+
+    @Override // java.lang.Enum
+    public final String toString() {
+        return Integer.toString(this.zze);
+    }
+
+    @Override // com.google.android.gms.internal.gtm.zzxx
+    public final int zza() {
+        return this.zze;
+    }
+}

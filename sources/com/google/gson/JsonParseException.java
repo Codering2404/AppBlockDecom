@@ -1,0 +1,19 @@
+package com.google.gson;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes6.dex */
+public class JsonParseException extends RuntimeException {
+    static final long serialVersionUID = -4086729973971783390L;
+
+    public JsonParseException(String str) {
+        super(str);
+    }
+
+    public JsonParseException(String str, Throwable th) {
+        super(str, th);
+    }
+
+    public JsonParseException(Throwable th) {
+        super(th);
+    }
+}

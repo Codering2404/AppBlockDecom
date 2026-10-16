@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+    <ImageView
+        android:id="@+id/imageImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/titleTextView"
+        android:paddingBottom="4dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/AppTheme.TextView.H5.Secondary"/>
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="@+id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        style="@style/AppTheme.TextView.Body2.Secondary"/>
+    <TextView
+        android:id="@+id/purchasedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/purchased"
+        app:layout_constraintStart_toStartOf="@+id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        style="@style/AppTheme.TextView.Badge.Premium"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

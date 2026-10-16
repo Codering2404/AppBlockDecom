@@ -1,0 +1,28 @@
+package com.google.android.libraries.places.internal;
+
+import java.util.Objects;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes6.dex */
+final class zzbvd implements Runnable {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    final /* synthetic */ zzbvl f76941a;
+
+    zzbvd(zzbvl zzbvlVar) {
+        Objects.requireNonNull(zzbvlVar);
+        this.f76941a = zzbvlVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        zzbvl zzbvlVar = this.f76941a;
+        zzbvr zzbvrVar = zzbvlVar.f76957d;
+        if (zzbvrVar.p() == null) {
+            if (zzbvlVar.j().get() == zzbvr.f76981j0) {
+                zzbvlVar.j().set(null);
+            }
+            zzbvrVar.t().a(zzbvr.f76978g0);
+        }
+    }
+}

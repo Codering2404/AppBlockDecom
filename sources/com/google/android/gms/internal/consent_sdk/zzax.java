@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.consent_sdk;
+
+import java.util.concurrent.Executor;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzax implements zzth {
+    public static Executor zza() {
+        Executor executor = zzcz.zzb;
+        zztj.zza(executor);
+        return executor;
+    }
+
+    @Override // com.google.android.gms.internal.consent_sdk.zztm, com.google.android.gms.internal.consent_sdk.zztl
+    public final /* synthetic */ Object zzb() {
+        return zza();
+    }
+}

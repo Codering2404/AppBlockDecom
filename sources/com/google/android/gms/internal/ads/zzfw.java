@@ -1,0 +1,30 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzfw implements zzao {
+    public final int zza;
+
+    public zzfw(int i3) {
+        this.zza = i3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof zzfw) && this.zza == ((zzfw) obj).zza;
+    }
+
+    public final int hashCode() {
+        return this.zza;
+    }
+
+    public final String toString() {
+        int i3 = this.zza;
+        StringBuilder sb = new StringBuilder(String.valueOf(i3).length() + 19);
+        sb.append("Mp4AlternateGroup: ");
+        sb.append(i3);
+        return sb.toString();
+    }
+}

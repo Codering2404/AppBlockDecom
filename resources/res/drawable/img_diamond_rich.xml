@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="40dp"
+    android:width="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <path
+        android:fillColor="@drawable/_img_diamond_rich__0_res_0x7f0800d8"
+        android:pathData="M0,11.613L7.5,0H32.5L40,11.613L20,17.894L0,11.613Z"/>
+    <path
+        android:fillColor="@drawable/_img_diamond_rich__1_res_0x7f0800d9"
+        android:pathData="M0,11.615H40L20,40.001L0,11.615Z"/>
+    <path
+        android:fillColor="@drawable/_img_diamond_rich__2_res_0x7f0800da"
+        android:pathData="M11.25,11.615L20.001,40.001L28.751,11.615H11.25Z"/>
+    <path
+        android:fillColor="@drawable/_img_diamond_rich__3_res_0x7f0800db"
+        android:pathData="M7.5,0L11.25,11.613H28.751L32.501,0H7.5Z"/>
+    <path
+        android:fillColor="@drawable/_img_diamond_rich__4_res_0x7f0800dc"
+        android:pathData="M11.25,11.613L20.001,0L28.751,11.613H11.25Z"/>
+</vector>

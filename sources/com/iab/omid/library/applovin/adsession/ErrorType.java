@@ -1,0 +1,21 @@
+package com.iab.omid.library.applovin.adsession;
+
+import com.facebook.internal.AnalyticsEvents;
+
+/* JADX INFO: compiled from: r8-map-id-aeed946b5c08d53ab1183f044697ed0198ed68911f04ca2b3020ab9523212320 */
+/* JADX INFO: loaded from: classes6.dex */
+public enum ErrorType {
+    GENERIC("generic"),
+    VIDEO(AnalyticsEvents.PARAMETER_SHARE_DIALOG_CONTENT_VIDEO);
+
+    private final String errorType;
+
+    ErrorType(String str) {
+        this.errorType = str;
+    }
+
+    @Override // java.lang.Enum
+    public String toString() {
+        return this.errorType;
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@drawable/_icon_category_entertainment__0_res_0x7f08007e"
+        android:pathData="M7,3V7V9V15.176C6.679,15.061 6.341,15.001 6,15C5.204,15 4.441,15.316 3.879,15.879C3.316,16.441 3,17.204 3,18C3,18.796 3.316,19.559 3.879,20.121C4.441,20.684 5.204,21 6,21C6.796,21 7.559,20.684 8.121,20.121C8.684,19.559 9,18.796 9,18V9H18V15.176C17.679,15.061 17.341,15.001 17,15C16.204,15 15.441,15.316 14.879,15.879C14.316,16.441 14,17.204 14,18C14,18.796 14.316,19.559 14.879,20.121C15.441,20.684 16.204,21 17,21C17.796,21 18.559,20.684 19.121,20.121C19.684,19.559 20,18.796 20,18V9V7V3H7Z"/>
+</vector>
